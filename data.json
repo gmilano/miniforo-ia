@@ -246,7 +246,8 @@
       "initials": "JC",
       "type": "ceo",
       "time": null,
-      "image": "images/joaquin-cabrera.jpg"
+      "image": "images/joaquin-cabrera.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/joaquin-cabrera.mp4"
     },
     {
       "id": "agustin-tafernaberry",
