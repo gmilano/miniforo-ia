@@ -11,7 +11,8 @@
       "company_desc": "GeneXus es la plataforma pionera de desarrollo low-code que genera software automáticamente desde 1988.",
       "initials": "NJ",
       "type": "expert",
-      "time": "10:00"
+      "time": "10:00",
+      "image": "images/nicolas-jodal.jpg"
     },
     {
       "id": "ariel-lipchutz",
@@ -24,7 +25,8 @@
       "company_desc": "IA2 Agency es una agencia especializada en implementación estratégica de inteligencia artificial para empresas.",
       "initials": "AL",
       "type": "expert",
-      "time": "10:20"
+      "time": "10:20",
+      "image": "images/ariel-lipchutz.jpg"
     },
     {
       "id": "andi-bzurovski",
@@ -37,7 +39,8 @@
       "company_desc": "dLocal es la plataforma fintech uruguaya listada en NASDAQ que conecta pagos globales con mercados emergentes.",
       "initials": "AB",
       "type": "expert",
-      "time": "10:40"
+      "time": "10:40",
+      "image": "images/andi-bzurovski.jpg"
     },
     {
       "id": "diego-gamba",
@@ -50,7 +53,8 @@
       "company_desc": "MercadoLibre es la plataforma de comercio electrónico y fintech más grande de América Latina, con presencia en 18 países.",
       "initials": "DG",
       "type": "expert",
-      "time": "11:00"
+      "time": "11:00",
+      "image": "images/diego-gamba.jpg"
     },
     {
       "id": "daniel-gandara",
@@ -63,7 +67,8 @@
       "company_desc": "MercadoLibre es el ecosistema de comercio y pagos digitales líder en América Latina.",
       "initials": "DG",
       "type": "expert",
-      "time": "11:00"
+      "time": "11:00",
+      "image": "images/daniel-gandara.jpg"
     },
     {
       "id": "esteban-ordano",
@@ -76,7 +81,8 @@
       "company_desc": "Decentraland es la primera plataforma de mundo virtual descentralizado construida sobre blockchain Ethereum.",
       "initials": "EO",
       "type": "expert",
-      "time": "11:20"
+      "time": "11:20",
+      "image": "images/esteban-ordano.jpg"
     },
     {
       "id": "matias-boix",
@@ -89,7 +95,8 @@
       "company_desc": "Globant es una empresa nativa digital listada en NYSE que ayuda a las organizaciones más grandes del mundo a reinventarse con tecnología.",
       "initials": "MB",
       "type": "expert",
-      "time": "11:40"
+      "time": "11:40",
+      "image": "images/matias-boix.jpg"
     },
     {
       "id": "gaston-milano",
@@ -102,7 +109,8 @@
       "company_desc": "Globant Enterprise AI es la unidad de Globant especializada en llevar soluciones de inteligencia artificial a escala empresarial global.",
       "initials": "GM",
       "type": "expert",
-      "time": "12:00"
+      "time": "12:00",
+      "image": "images/gaston-milano.jpg"
     },
     {
       "id": "leo-alvarez",
@@ -115,7 +123,8 @@
       "company_desc": "Fenicio es la plataforma de ecommerce uruguaya que permite a empresas de todos los tamaños vender online de forma profesional.",
       "initials": "LA",
       "type": "expert",
-      "time": "12:20"
+      "time": "12:20",
+      "image": "images/leo-alvarez.jpg"
     },
     {
       "id": "andres-marrero",
@@ -128,7 +137,8 @@
       "company_desc": "Cardinal es una agencia digital y Global Commerce Uruguay es una plataforma que conecta marcas uruguayas con el comercio global.",
       "initials": "AM",
       "type": "expert",
-      "time": "12:40"
+      "time": "12:40",
+      "image": "images/andres-marrero.jpg"
     },
     {
       "id": "sebastian-sanchez",
@@ -141,7 +151,8 @@
       "company_desc": "KS-NX es una empresa uruguaya enfocada en soluciones empresariales y tecnológicas.",
       "initials": "SS",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/sebastian-sanchez.jpg"
     },
     {
       "id": "gonzalo-pittaluga",
@@ -154,7 +165,8 @@
       "company_desc": "Pittaluga KS Contable es un estudio contable uruguayo que integra servicios financieros con visión estratégica empresarial.",
       "initials": "GP",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/gonzalo-pittaluga.jpg"
     },
     {
       "id": "martin-eurnekian",
@@ -167,7 +179,8 @@
       "company_desc": "Corporación América es un holding multinacional que opera aeropuertos internacionales, medios de comunicación y agronegocios.",
       "initials": "ME",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/martin-eurnekian.jpg"
     },
     {
       "id": "martin-dovat",
@@ -180,7 +193,8 @@
       "company_desc": "Zonamerica es la zona franca y campus empresarial líder de Uruguay, hogar de cientos de empresas tecnológicas y de servicios globales.",
       "initials": "MD",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/martin-dovat.jpg"
     },
     {
       "id": "orlando-dovat",
@@ -193,7 +207,8 @@
       "company_desc": "Zonamerica es la zona franca y campus empresarial líder de Uruguay, pionera en atraer inversión tecnológica al país.",
       "initials": "OD",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/orlando-dovat.jpg"
     },
     {
       "id": "juan-manuel-parada",
@@ -206,7 +221,8 @@
       "company_desc": "Tienda Inglesa es la cadena premium de supermercados de Uruguay, reconocida por su calidad de servicio y experiencia de compra.",
       "initials": "JP",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/juan-manuel-parada.jpg"
     },
     {
       "id": "joaquin-cabrera",
@@ -219,7 +235,8 @@
       "company_desc": "Ciemsa CSI Ingeniería es una empresa uruguaya líder en servicios de ingeniería industrial e infraestructura.",
       "initials": "JC",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/joaquin-cabrera.jpg"
     },
     {
       "id": "agustin-tafernaberry",
@@ -232,7 +249,8 @@
       "company_desc": "Itaú Uruguay es la operación local del mayor banco privado de América Latina, con fuerte foco en innovación y banca digital.",
       "initials": "AT",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/agustin-tafernaberry.jpg"
     },
     {
       "id": "andres-packziarz",
@@ -245,7 +263,8 @@
       "company_desc": "Joacamar-Xion es un grupo empresarial uruguayo con operaciones en desarrollo inmobiliario y negocios diversificados.",
       "initials": "AP",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/andres-packziarz.jpg"
     },
     {
       "id": "natty-manhard",
@@ -258,7 +277,8 @@
       "company_desc": "Chic Parisien es una reconocida cadena de moda y retail en Uruguay con décadas de trayectoria.",
       "initials": "NM",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/natty-manhard.jpg"
     },
     {
       "id": "diego-forlan",
@@ -271,7 +291,8 @@
       "company_desc": "DFC Club Deportivo es el emprendimiento deportivo fundado por Diego Forlán, enfocado en formación y desarrollo deportivo.",
       "initials": "DF",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/diego-forlan.jpg"
     },
     {
       "id": "alejandro-gerwer",
@@ -284,7 +305,8 @@
       "company_desc": "Casa Jorge Importación es una empresa uruguaya de larga trayectoria en importación y distribución comercial.",
       "initials": "AG",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/alejandro-gerwer.jpg"
     },
     {
       "id": "pipe-stein",
@@ -297,7 +319,8 @@
       "company_desc": "Notable Publicidad es una agencia publicitaria uruguaya reconocida por su creatividad estratégica y campañas de alto impacto.",
       "initials": "PS",
       "type": "ceo",
-      "time": null
+      "time": null,
+      "image": "images/pipe-stein.jpg"
     },
     {
       "id": "mati-wolosky",
@@ -310,7 +333,8 @@
       "company_desc": "Emprendedor tecnológico del ecosistema startup uruguayo.",
       "initials": "MW",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/mati-wolosky.jpg"
     },
     {
       "id": "sergio-fogel",
@@ -323,7 +347,8 @@
       "company_desc": "dLocal es la plataforma de pagos transfronterizos fundada en Uruguay, listada en NASDAQ desde 2021.",
       "initials": "SF",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/sergio-fogel.jpg"
     },
     {
       "id": "hernan-kazah",
@@ -336,7 +361,8 @@
       "company_desc": "Kaszek Ventures es el fondo de venture capital más grande de América Latina, con inversiones en los startups más exitosos de la región.",
       "initials": "HK",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/hernan-kazah.jpg"
     },
     {
       "id": "guibert-englebienne",
@@ -349,7 +375,8 @@
       "company_desc": "Globant es una empresa nativa digital argentina listada en NYSE, con más de 28,000 empleados y operaciones en 30 países.",
       "initials": "GE",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/guibert-englebienne.jpg"
     },
     {
       "id": "martin-migoya",
@@ -362,7 +389,8 @@
       "company_desc": "Globant es una de las empresas de tecnología más valiosas nacidas en América Latina, listada en NYSE con $8B de capitalización.",
       "initials": "MM",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/martin-migoya.jpg"
     },
     {
       "id": "martin-delosantos",
@@ -375,7 +403,8 @@
       "company_desc": "Globant es una empresa nativa digital líder en transformación tecnológica, listada en NYSE.",
       "initials": "MD",
       "type": "incopy",
-      "time": null
+      "time": null,
+      "image": "images/martin-delosantos.jpg"
     }
   ]
 }
