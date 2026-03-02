@@ -115,7 +115,8 @@
       "initials": "GM",
       "type": "expert",
       "time": "13:00",
-      "image": "images/gaston-milano.jpg"
+      "image": "images/gaston-milano.jpg",
+      "video": "videos/gaston-milano.mp4"
     },
     {
       "id": "leo-alvarez",
