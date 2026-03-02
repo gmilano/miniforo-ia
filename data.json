@@ -305,7 +305,8 @@
       "initials": "DF",
       "type": "ceo",
       "time": null,
-      "image": "images/diego-forlan.jpg"
+      "image": "images/diego-forlan.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/diego-forlan.mp4"
     },
     {
       "id": "alejandro-gerwer",
