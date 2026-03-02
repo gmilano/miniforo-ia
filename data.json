@@ -11,9 +11,11 @@
       "company_desc": "GeneXus es la plataforma pionera de desarrollo low-code que genera software automáticamente desde 1988.",
       "initials": "NJ",
       "type": "expert",
-      "time": "11:00",
+      "time": "11:30",
       "image": "images/nicolas-jodal.jpg",
-      "video": "videos/nicolas-jodal.mp4"
+      "video": "videos/nicolas-jodal.mp4",
+      "time_end": "11:40",
+      "time_note": "con Gisella Bertelli"
     },
     {
       "id": "ariel-lipchutz",
@@ -26,9 +28,11 @@
       "company_desc": "IA2 Agency es una agencia especializada en implementación estratégica de inteligencia artificial para empresas.",
       "initials": "AL",
       "type": "expert",
-      "time": "11:20",
+      "time": "11:40",
       "image": "images/ariel-lipchutz.jpg",
-      "video": "videos/ariel-lipchutz.mp4"
+      "video": "videos/ariel-lipchutz.mp4",
+      "time_end": "11:50",
+      "time_note": "Invitado especial Bs As"
     },
     {
       "id": "andi-bzurovski",
@@ -41,9 +45,10 @@
       "company_desc": "dLocal es la plataforma fintech uruguaya listada en NASDAQ que conecta pagos globales con mercados emergentes.",
       "initials": "AB",
       "type": "expert",
-      "time": "11:40",
+      "time": "11:50",
       "image": "images/andi-bzurovski.jpg",
-      "video": "videos/andi-bzurovski.mp4"
+      "video": "videos/andi-bzurovski.mp4",
+      "time_end": "12:00"
     },
     {
       "id": "diego-gamba",
@@ -58,7 +63,8 @@
       "type": "expert",
       "time": "12:00",
       "image": "images/diego-gamba.jpg",
-      "video": "videos/diego-gamba.mp4"
+      "video": "videos/diego-gamba.mp4",
+      "time_end": "12:10"
     },
     {
       "id": "daniel-gandara",
@@ -73,7 +79,8 @@
       "type": "expert",
       "time": "12:00",
       "image": "images/daniel-gandara.jpg",
-      "video": "videos/daniel-gandara.mp4"
+      "video": "videos/daniel-gandara.mp4",
+      "time_end": "12:10"
     },
     {
       "id": "esteban-ordano",
@@ -86,9 +93,10 @@
       "company_desc": "Decentraland es la primera plataforma de mundo virtual descentralizado construida sobre blockchain Ethereum.",
       "initials": "EO",
       "type": "expert",
-      "time": "12:20",
+      "time": "12:10",
       "image": "images/esteban-ordano.jpg",
-      "video": "videos/esteban-ordano.mp4"
+      "video": "videos/esteban-ordano.mp4",
+      "time_end": "12:20"
     },
     {
       "id": "matias-boix",
@@ -101,9 +109,10 @@
       "company_desc": "Globant es una empresa nativa digital listada en NYSE que ayuda a las organizaciones más grandes del mundo a reinventarse con tecnología.",
       "initials": "MB",
       "type": "expert",
-      "time": "12:40",
+      "time": "12:20",
       "image": "images/matias-boix.jpg",
-      "video": "videos/matias-boix.mp4"
+      "video": "videos/matias-boix.mp4",
+      "time_end": "12:30"
     },
     {
       "id": "gaston-milano",
@@ -116,9 +125,10 @@
       "company_desc": "Globant Enterprise AI es la unidad de Globant especializada en llevar soluciones de inteligencia artificial a escala empresarial global.",
       "initials": "GM",
       "type": "expert",
-      "time": "13:00",
+      "time": "12:30",
       "image": "images/gaston-milano.jpg",
-      "video": "videos/gaston-milano.mp4"
+      "video": "videos/gaston-milano.mp4",
+      "time_end": "12:40"
     },
     {
       "id": "leo-alvarez",
@@ -131,9 +141,10 @@
       "company_desc": "Fenicio es la plataforma de ecommerce uruguaya que permite a empresas de todos los tamaños vender online de forma profesional.",
       "initials": "LA",
       "type": "expert",
-      "time": "13:20",
+      "time": "12:40",
       "image": "images/leo-alvarez.jpg",
-      "video": "videos/leo-alvarez.mp4"
+      "video": "videos/leo-alvarez.mp4",
+      "time_end": "12:45"
     },
     {
       "id": "andres-marrero",
@@ -146,9 +157,10 @@
       "company_desc": "Cardinal es una agencia digital y Global Commerce Uruguay es una plataforma que conecta marcas uruguayas con el comercio global.",
       "initials": "AM",
       "type": "expert",
-      "time": "13:40",
+      "time": "12:45",
       "image": "images/andres-marrero.jpg",
-      "video": "videos/andres-marrero.mp4"
+      "video": "videos/andres-marrero.mp4",
+      "time_end": "12:50"
     },
     {
       "id": "sebastian-sanchez",

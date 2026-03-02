@@ -12,10 +12,9 @@
     "progress": 100
   },
   "andi-bzurovski": {
-    "jobId": null,
-    "name": "Andi Bzurovski",
-    "status": "retry",
-    "progress": 0
+    "jobId": "video_69a4ed209dc08190be22a21e7891a62702401771f9c0f99b",
+    "name": "andi-bzurovski",
+    "status": "pending"
   },
   "diego-gamba": {
     "jobId": "video_69a4e49e3ecc81908f45f2286df71b920e20199f2e22ea7d",
@@ -36,16 +35,15 @@
     "progress": 100
   },
   "matias-boix": {
-    "jobId": null,
-    "name": "Matias Boix",
-    "status": "retry",
-    "progress": 0
+    "jobId": "video_69a4ed21259c8190b94bbdfbd1e85ac104e32c10281b9b4c",
+    "name": "matias-boix",
+    "status": "pending"
   },
   "gaston-milano": {
-    "jobId": null,
+    "jobId": "video_69a4ebeff3848193b1104727b3cd1d1f09dfd8333d1bb019",
     "name": "Gaston Milano",
-    "status": "retry",
-    "progress": 0
+    "status": "completed",
+    "progress": 100
   },
   "leo-alvarez": {
     "jobId": "video_69a4e4ad47248190983738039f9ab5a8038c1d5c56b7b3c6",
@@ -78,10 +76,10 @@
     "progress": 100
   },
   "martin-dovat": {
-    "jobId": null,
+    "jobId": "video_69a4ebf2d7808191bda46278abe1ebd507e523f408ff1b8a",
     "name": "Martin Dovat",
-    "status": "retry",
-    "progress": 0
+    "status": "completed",
+    "progress": 100
   },
   "orlando-dovat": {
     "jobId": "video_69a4e4bf7b1481908e9917309a478389084d0ec3c13caf77",
@@ -102,10 +100,10 @@
     "progress": 100
   },
   "agustin-tafernaberry": {
-    "jobId": null,
+    "jobId": "video_69a4ebf5b98481908d26cee8573a03f901c9fe3d4ca80818",
     "name": "Agustin Tafernaberry",
-    "status": "retry",
-    "progress": 0
+    "status": "completed",
+    "progress": 100
   },
   "andres-packziarz": {
     "jobId": "video_69a4e4ca23dc8190af21b92c1067e5570803c0693cd73feb",
@@ -121,7 +119,7 @@
   },
   "diego-forlan": {
     "jobId": "video_69a4e4cf627c81909b3cb4c836a2511707134e0c4d833da1",
-    "name": "Diego Forl\u00e1n",
+    "name": "Diego Forlán",
     "status": "completed",
     "progress": 100
   },
@@ -150,10 +148,10 @@
     "progress": 100
   },
   "hernan-kazah": {
-    "jobId": null,
+    "jobId": "video_69a4ecbfacac81918a053050a5e5d5940d16cd3fb8428f63",
     "name": "Hernan Kazah",
-    "status": "retry",
-    "progress": 0
+    "status": "completed",
+    "progress": 100
   },
   "guibert-englebienne": {
     "jobId": "video_69a4e4e1bb4c81989fe6f3fa8b21081d0ed161bda416a947",
@@ -162,10 +160,10 @@
     "progress": 100
   },
   "martin-migoya": {
-    "jobId": null,
+    "jobId": "video_69a4ebfb38c4819189fe99922d327eae0aeee847241c75bc",
     "name": "Martin Migoya",
-    "status": "retry",
-    "progress": 0
+    "status": "completed",
+    "progress": 100
   },
   "martin-delosantos": {
     "jobId": "video_69a4e4e7303c81908729a5c6ba7a03e807df179101737740",

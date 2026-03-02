@@ -61,6 +61,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 .agenda-name{font-size:1rem;font-weight:700;margin-bottom:2px}
 .agenda-role{font-size:.8rem;color:var(--muted)}
 .agenda-tagline{font-size:.83rem;color:var(--text);opacity:.7;margin-top:7px;line-height:1.5}
+.agenda-note{display:inline-block;background:rgba(10,102,194,.15);border:1px solid rgba(10,102,194,.3);color:var(--accent);font-size:.65rem;font-weight:600;padding:1px 7px;border-radius:100px;margin-left:4px;vertical-align:middle}
+.agenda-fixed .agenda-card{cursor:default;opacity:.8}
+.agenda-fixed .agenda-card:hover{transform:none;border-color:var(--border)}
 
 /* GALLERY */
 .gallery-grid{columns:2;column-gap:12px;max-width:960px;margin:0 auto;padding:0 20px}
@@ -345,7 +348,46 @@ function renderAll() {
 /* ─── AGENDA ─── */
 function renderAgenda() {
   const experts = peopleData.filter(p => p.type==='expert' && p.time).sort((a,b)=>a.time.localeCompare(b.time));
-  document.getElementById('agenda-list').innerHTML = experts.map(p => `
+
+  // Fixed opening slots
+  const openingSlots = `
+    <div class="agenda-item agenda-fixed">
+      <div class="agenda-card agenda-card-fixed">
+        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#0d0d1a)">👥</div>
+        <div class="agenda-content">
+          <div class="agenda-time">11:00 – 11:20</div>
+          <div class="agenda-name">Recepción</div>
+          <div class="agenda-role">Presentación de integrantes — Empresa y Rol (deck)</div>
+        </div>
+      </div>
+    </div>
+    <div class="agenda-item agenda-fixed">
+      <div class="agenda-card agenda-card-fixed">
+        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#0a2a1a,#051a0a)">🎤</div>
+        <div class="agenda-content">
+          <div class="agenda-time">11:20 – 11:30</div>
+          <div class="agenda-name">Apertura</div>
+          <div class="agenda-role">Moderador: Fabián Kopel · Presentación de alcances y objetivos (10 min)</div>
+        </div>
+      </div>
+    </div>`;
+
+  const closingSlot = `
+    <div class="agenda-item agenda-fixed">
+      <div class="agenda-card agenda-card-fixed">
+        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a0a0a,#2a1515)">🤝</div>
+        <div class="agenda-content">
+          <div class="agenda-time">13:00+</div>
+          <div class="agenda-name">Rondas con empresas</div>
+          <div class="agenda-role">Dinámicas con necesidades de empresas KS y participantes</div>
+        </div>
+      </div>
+    </div>`;
+
+  const speakerSlots = experts.map(p => {
+    const timeRange = p.time_end ? `${p.time} – ${p.time_end}` : p.time;
+    const noteHTML = p.time_note ? `<span class="agenda-note">${p.time_note}</span>` : '';
+    return `
     <div class="agenda-item" onclick="openModal('${p.id}')">
       <div class="agenda-card">
         ${p.image
@@ -353,13 +395,16 @@ function renderAgenda() {
           : `<div class="agenda-img-placeholder">${getInitials(p.name)}</div>`
         }
         <div class="agenda-content">
-          <div class="agenda-time">${p.time}</div>
+          <div class="agenda-time">${timeRange} ${noteHTML}</div>
           <div class="agenda-name">${p.name}</div>
           <div class="agenda-role">${p.role} · ${p.company}</div>
           <div class="agenda-tagline">${p.tagline}</div>
         </div>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
+
+  document.getElementById('agenda-list').innerHTML = openingSlots + speakerSlots + closingSlot;
 }
 
 /* ─── GALLERY ─── */

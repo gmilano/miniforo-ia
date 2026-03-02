@@ -144,7 +144,7 @@ async function submitSoraJobs(people) {
   for (const p of people) {
     const dest = `videos/${p.id}.mp4`;
     if (fs.existsSync(dest)) { console.log(`  ✓ Video exists: ${p.name}`); continue; }
-    if (jobs[p.id]?.jobId && jobs[p.id].status !== 'failed') {
+    if (jobs[p.id]?.jobId && !['failed','retry'].includes(jobs[p.id].status)) {
       console.log(`  ⏳ Queued: ${p.name} (${jobs[p.id].jobId})`); continue;
     }
     console.log(`  🎬 Submitting Sora: ${p.name}...`);
@@ -165,7 +165,6 @@ async function submitSoraJobs(people) {
 
 async function pollAndDownload() {
   fs.mkdirSync('videos', { recursive: true });
-  await ensureRelease();
   const data = JSON.parse(fs.readFileSync('data.json','utf8'));
 
   let jobs = loadJobs();
@@ -186,17 +185,15 @@ async function pollAndDownload() {
         if (['completed','ready'].includes(s.status)) {
           console.log(`  ⬇️  Downloading: ${job.name}...`);
           await downloadApiStream(`/videos/${job.jobId}/content`, dest);
-          console.log(`  📤 Uploading to GitHub Releases...`);
-          const url = await uploadToRelease(dest, `${id}.mp4`);
-          console.log(`  ✅ Done: ${url}`);
-          // Update data.json
+          console.log(`  ✅ Saved: ${dest}`);
+          // Update data.json with local path
           const person = data.people.find(x => x.id === id);
-          if (person) { person.video = url; }
+          if (person) { person.video = dest; }
           fs.writeFileSync('data.json', JSON.stringify(data,null,2));
           // Commit update
           try {
-            execSync(`cd ${process.cwd()} && git add data.json && git commit -m "feat: add Sora video for ${job.name}" && git push`, { stdio:'pipe' });
-            console.log(`  🚀 Committed & pushed data.json`);
+            execSync(`cd ${process.cwd()} && git add videos/${id}.mp4 data.json && git commit -m "feat: add Sora video for ${job.name}" && git push`, { stdio:'pipe' });
+            console.log(`  🚀 Pushed`);
           } catch(e) { console.warn('  ⚠️  Git push failed:', e.message.slice(0,100)); }
           job.status = 'completed';
         } else if (s.status === 'failed') {
