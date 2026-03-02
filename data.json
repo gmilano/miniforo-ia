@@ -290,7 +290,8 @@
       "initials": "NM",
       "type": "ceo",
       "time": null,
-      "image": "images/natty-manhard.jpg"
+      "image": "images/natty-manhard.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/natty-manhard.mp4"
     },
     {
       "id": "diego-forlan",
