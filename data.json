@@ -86,7 +86,8 @@
       "initials": "EO",
       "type": "expert",
       "time": "11:20",
-      "image": "images/esteban-ordano.jpg"
+      "image": "images/esteban-ordano.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/esteban-ordano.mp4"
     },
     {
       "id": "matias-boix",
