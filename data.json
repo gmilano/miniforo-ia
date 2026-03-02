@@ -129,7 +129,8 @@
       "initials": "LA",
       "type": "expert",
       "time": "12:20",
-      "image": "images/leo-alvarez.jpg"
+      "image": "images/leo-alvarez.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/leo-alvarez.mp4"
     },
     {
       "id": "andres-marrero",
