@@ -205,7 +205,8 @@
       "initials": "MD",
       "type": "ceo",
       "time": null,
-      "image": "images/martin-dovat.jpg"
+      "image": "images/martin-dovat.jpg",
+      "video": "videos/martin-dovat.mp4"
     },
     {
       "id": "orlando-dovat",
