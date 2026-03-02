@@ -147,6 +147,26 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+/* FORMATO */
+.formato-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.formato-block{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px}
+.formato-block.highlight{border-color:rgba(10,102,194,.4);background:linear-gradient(135deg,var(--card),rgba(10,102,194,.06))}
+.formato-time{font-size:.75rem;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:8px}
+.formato-title{font-size:1rem;font-weight:700;margin-bottom:6px}
+.formato-desc{font-size:.82rem;color:var(--muted);line-height:1.6}
+.formato-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:100px;padding:7px 13px;font-size:.78rem;color:var(--muted)}
+.chip span{font-size:.9rem}
+/* INVITATION */
+.invitation{background:linear-gradient(135deg,rgba(10,102,194,.08),rgba(10,102,194,.02));border:1px solid rgba(10,102,194,.2);border-radius:20px;padding:36px;text-align:center;max-width:720px;margin:0 auto}
+.invitation-quote{font-size:1.05rem;line-height:1.8;color:#ccc;margin-bottom:24px;font-style:italic}
+.invitation-quote strong{color:#fff;font-style:normal}
+.invitation-sig{font-size:.9rem;color:var(--accent);font-weight:600}
+.forlan-callout{background:linear-gradient(135deg,rgba(255,215,0,.08),rgba(255,140,0,.04));border:1px solid rgba(255,215,0,.25);border-radius:14px;padding:20px 24px;margin-top:20px;display:flex;align-items:center;gap:14px}
+.forlan-callout-icon{font-size:2rem;flex-shrink:0}
+.forlan-callout-text{font-size:.88rem;line-height:1.6;color:#ddd}
+.forlan-callout-text strong{color:#ffd700}
+/* FOOTER */
 .footer-brand{font-size:1.2rem;font-weight:800;margin-bottom:8px}
 .footer-brand span{color:var(--accent)}
 .footer-sub{font-size:.82rem;color:var(--muted)}
@@ -165,11 +185,11 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <nav>
   <div class="nav-brand">Foro<span>IA</span></div>
   <div class="nav-links">
+    <a href="#formato">Formato</a>
     <a href="#agenda">Agenda</a>
     <a href="#galeria">Galería</a>
     <a href="#expertos">Expertos</a>
     <a href="#empresas">Empresas</a>
-    <a href="#faq">FAQ</a>
   </div>
 </nav>
 
@@ -193,12 +213,53 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
   </div>
 </div>
 
+<!-- FORMATO -->
+<div class="section" id="formato">
+  <div class="section-header">
+    <div class="section-label">Formato del Evento</div>
+    <div class="section-title">Cómo será el día</div>
+    <div class="section-sub">Un encuentro íntimo, dinámico y sin protocolo — diseñado para que fluya la conversación real.</div>
+  </div>
+
+  <div class="formato-grid">
+    <div class="formato-block">
+      <div class="formato-time">11:00 – 11:20</div>
+      <div class="formato-title">👥 Recepción</div>
+      <div class="formato-desc">Presentación de integrantes con empresa y rol. Se realiza en deck. Café desde el primer momento.</div>
+    </div>
+    <div class="formato-block highlight">
+      <div class="formato-time">11:20 – 12:50</div>
+      <div class="formato-title">🎤 Ronda de Expertos</div>
+      <div class="formato-desc">10 presentaciones de 10 minutos cada una. Cada experto comparte su visión sobre IA en su industria. Moderador: Fabián Kopel.</div>
+    </div>
+    <div class="formato-block highlight">
+      <div class="formato-time">12:50 – 14:30</div>
+      <div class="formato-title">🏢 Ronda de CEOs</div>
+      <div class="formato-desc">Cada empresario presenta en 3 minutos sus puntos de dolor. Bloques de 10 min con intercambio directo con los expertos. A las 12:50 se sirve la picada, a las 13:30 ensaladas y asado — sin cortar las charlas (de a 3 personas).</div>
+    </div>
+    <div class="formato-block">
+      <div class="formato-time">14:30 en adelante</div>
+      <div class="formato-title">🤝 Networking libre</div>
+      <div class="formato-desc">Toda la tarde disponible para hablar con los expertos, intercambiar, y programar reuniones futuras. Sin reloj, sin protocolo.</div>
+    </div>
+  </div>
+
+  <div class="formato-chips">
+    <div class="chip"><span>☕</span> Café durante todo el evento</div>
+    <div class="chip"><span>🥗</span> Picada 12:50 · Asado y ensaladas 13:30</div>
+    <div class="chip"><span>🪑</span> Mesa central ~30 personas con acompañante</div>
+    <div class="chip"><span>🎥</span> Grabación confidencial — link privado para cada CEO</div>
+    <div class="chip"><span>👁</span> 2dos mandos presentes como oyentes</div>
+    <div class="chip"><span>🔕</span> Cámara se corta si alguien no quiere ser grabado</div>
+  </div>
+</div>
+
 <!-- AGENDA -->
 <div class="section" id="agenda">
   <div class="section-header">
     <div class="section-label">Programa</div>
     <div class="section-title">Agenda del Foro</div>
-    <div class="section-sub">Speakers confirmados con horario asignado. Click para ver su historia.</div>
+    <div class="section-sub">Horarios confirmados en hora Uruguay. Click en cada speaker para ver su historia y video.</div>
   </div>
   <div class="agenda" id="agenda-list"></div>
 </div>
@@ -271,6 +332,27 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     <div class="faq-item">
       <div class="faq-q">¿Cómo contacto a Fabián? <span class="chevron">▼</span></div>
       <div class="faq-a">Podés contactar a Fabián Kopel directamente a través de LinkedIn o por los canales de comunicación del foro. Este evento es su iniciativa personal de generar conversaciones de impacto en el ecosistema uruguayo.</div>
+    </div>
+  </div>
+</div>
+
+<!-- INVITATION CLOSING -->
+<div class="section">
+  <div class="invitation">
+    <div class="invitation-quote">
+      "Los esperamos mañana con ganas de aprender y siempre agradecidos a ustedes que estén en Uruguay,
+      que es increíble que reúna este talento.<br><br>
+      <strong>Y tendremos también al mejor del Mundial 2010 como el talento uruguayo por excelencia...</strong>
+      a mi amigo Diego Forlán, que vendrá en su rol empresarial, que es impresionante también."
+    </div>
+    <div class="invitation-sig">— Fabián Kopel, organizador</div>
+
+    <div class="forlan-callout">
+      <div class="forlan-callout-icon">⭐</div>
+      <div class="forlan-callout-text">
+        <strong>Diego Forlán</strong> — Mejor jugador del Mundial 2010 · Fundador DFC Club Deportivo.
+        Presente como <strong>talento uruguayo por excelencia</strong> y empresario.
+      </div>
     </div>
   </div>
 </div>
@@ -372,14 +454,24 @@ function renderAgenda() {
       </div>
     </div>`;
 
-  const closingSlot = `
+  const closingSlots = `
     <div class="agenda-item agenda-fixed">
       <div class="agenda-card agenda-card-fixed">
-        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a0a0a,#2a1515)">🤝</div>
+        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a0f02,#2a1a04)">🏢</div>
         <div class="agenda-content">
-          <div class="agenda-time">13:00+</div>
-          <div class="agenda-name">Rondas con empresas</div>
-          <div class="agenda-role">Dinámicas con necesidades de empresas KS y participantes</div>
+          <div class="agenda-time">12:50 – 14:30</div>
+          <div class="agenda-name">Ronda de CEOs & Empresarios</div>
+          <div class="agenda-role">3 min por empresa · Puntos de dolor · Intercambio con expertos · Picada 12:50 · Asado 13:30</div>
+        </div>
+      </div>
+    </div>
+    <div class="agenda-item agenda-fixed">
+      <div class="agenda-card agenda-card-fixed">
+        <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#0a1a0a,#051205)">🤝</div>
+        <div class="agenda-content">
+          <div class="agenda-time">14:30 en adelante</div>
+          <div class="agenda-name">Networking libre</div>
+          <div class="agenda-role">Toda la tarde con los expertos · Reuniones · Café y sobremesa</div>
         </div>
       </div>
     </div>`;
@@ -404,7 +496,7 @@ function renderAgenda() {
     </div>`;
   }).join('');
 
-  document.getElementById('agenda-list').innerHTML = openingSlots + speakerSlots + closingSlot;
+  document.getElementById('agenda-list').innerHTML = openingSlots + speakerSlots + closingSlots;
 }
 
 /* ─── GALLERY ─── */
