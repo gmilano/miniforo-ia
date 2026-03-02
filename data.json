@@ -320,7 +320,8 @@
       "initials": "AG",
       "type": "ceo",
       "time": null,
-      "image": "images/alejandro-gerwer.jpg"
+      "image": "images/alejandro-gerwer.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/alejandro-gerwer.mp4"
     },
     {
       "id": "pipe-stein",
