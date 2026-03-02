@@ -72,10 +72,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 .gallery-item{break-inside:avoid;margin-bottom:12px;cursor:pointer;border-radius:10px;overflow:hidden;position:relative;border:1px solid var(--border);transition:transform .2s,border-color .2s}
 .gallery-item:hover{transform:scale(1.02);border-color:var(--accent)}
 .gallery-item img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,transparent 55%);opacity:0;transition:opacity .2s;display:flex;flex-direction:column;justify-content:flex-end;padding:12px}
-.gallery-item:hover .gallery-overlay{opacity:1}
-.gallery-overlay-name{font-size:.82rem;font-weight:700;color:#fff;line-height:1.3}
-.gallery-overlay-role{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:2px}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.1) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:10px}
+.gallery-overlay-name{font-size:.78rem;font-weight:700;color:#fff;line-height:1.2;text-shadow:0 1px 4px rgba(0,0,0,.8)}
+.gallery-overlay-role{font-size:.65rem;color:rgba(255,255,255,.65);margin-top:2px;display:none}
+.gallery-item:hover .gallery-overlay-role{display:block}
 .gallery-video-badge{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:3px 8px;font-size:.65rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:4px}
 
 /* PEOPLE GRID */
@@ -483,7 +483,7 @@ function renderAgenda() {
     <div class="agenda-item" onclick="openModal('${p.id}')">
       <div class="agenda-card">
         ${p.image
-          ? `<img class="agenda-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+          ? `<img class="agenda-img" src="${thumbSrc(p)}" alt="${p.name}" loading="lazy" decoding="async">`
           : `<div class="agenda-img-placeholder">${getInitials(p.name)}</div>`
         }
         <div class="agenda-content">
@@ -500,19 +500,30 @@ function renderAgenda() {
 }
 
 /* ─── GALLERY ─── */
+function thumbSrc(p) {
+  // Use thumbnail for gallery (lighter), full image for modal
+  return p.image ? p.image.replace('images/', 'images/thumb/') : null;
+}
+function lastName(name) {
+  const parts = name.replace(/"/g,'').split(' ');
+  return parts.length > 1 ? parts[parts.length - 1] : parts[0];
+}
 function renderGallery() {
-  document.getElementById('gallery-grid').innerHTML = peopleData.map(p => `
+  document.getElementById('gallery-grid').innerHTML = peopleData.map(p => {
+    const thumb = thumbSrc(p);
+    return `
     <div class="gallery-item" onclick="openModal('${p.id}')">
-      ${p.image
-        ? `<img src="${p.image}" alt="${p.name}" loading="lazy">`
+      ${thumb
+        ? `<img src="${thumb}" alt="${p.name}" loading="lazy" decoding="async">`
         : `<div style="aspect-ratio:16/9;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:rgba(255,255,255,.2)">${getInitials(p.name)}</div>`
       }
       ${p.video ? `<div class="gallery-video-badge">▶ Video</div>` : ''}
       <div class="gallery-overlay">
-        <div class="gallery-overlay-name">${p.name}</div>
+        <div class="gallery-overlay-name">${lastName(p.name)}</div>
         <div class="gallery-overlay-role">${p.role}</div>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 /* ─── EXPERTS GRID ─── */
@@ -523,7 +534,7 @@ function renderExperts() {
     return `
     <div class="person-card${isSpecial?' special':''}" onclick="openModal('${p.id}')">
       ${p.image
-        ? `<img class="person-card-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+        ? `<img class="person-card-img" src="${thumbSrc(p)}" alt="${p.name}" loading="lazy" decoding="async">`
         : `<div class="person-card-img-placeholder">${getInitials(p.name)}</div>`
       }
       <div class="person-card-body">
@@ -544,7 +555,7 @@ function renderCEOs() {
     return `
     <div class="person-card${isSpecial?' special':''}" onclick="openModal('${p.id}')">
       ${p.image
-        ? `<img class="person-card-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+        ? `<img class="person-card-img" src="${thumbSrc(p)}" alt="${p.name}" loading="lazy" decoding="async">`
         : `<div class="person-card-img-placeholder">${getInitials(p.name)}</div>`
       }
       <div class="person-card-body">
@@ -563,7 +574,7 @@ function renderInCopy() {
   document.getElementById('incopy-grid').innerHTML = incopy.map(p => `
     <div class="incopy-chip" onclick="openModal('${p.id}')">
       ${p.image
-        ? `<img class="incopy-avatar" src="${p.image}" alt="${p.name}">`
+        ? `<img class="incopy-avatar" src="${thumbSrc(p)}" alt="${p.name}" loading="lazy">`
         : `<div class="incopy-avatar-ph">${getInitials(p.name)}</div>`
       }
       <div>
