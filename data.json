@@ -12,7 +12,8 @@
       "initials": "NJ",
       "type": "expert",
       "time": "10:00",
-      "image": "images/nicolas-jodal.jpg"
+      "image": "images/nicolas-jodal.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/nicolas-jodal.mp4"
     },
     {
       "id": "ariel-lipchutz",
