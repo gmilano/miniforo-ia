@@ -56,7 +56,8 @@
       "initials": "DG",
       "type": "expert",
       "time": "11:00",
-      "image": "images/diego-gamba.jpg"
+      "image": "images/diego-gamba.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/diego-gamba.mp4"
     },
     {
       "id": "daniel-gandara",
