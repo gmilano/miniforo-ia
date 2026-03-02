@@ -13,7 +13,7 @@
       "type": "expert",
       "time": "11:00",
       "image": "images/nicolas-jodal.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/nicolas-jodal.mp4"
+      "video": "videos/nicolas-jodal.mp4"
     },
     {
       "id": "ariel-lipchutz",
@@ -28,7 +28,7 @@
       "type": "expert",
       "time": "11:20",
       "image": "images/ariel-lipchutz.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/ariel-lipchutz.mp4"
+      "video": "videos/ariel-lipchutz.mp4"
     },
     {
       "id": "andi-bzurovski",
@@ -57,7 +57,7 @@
       "type": "expert",
       "time": "12:00",
       "image": "images/diego-gamba.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/diego-gamba.mp4"
+      "video": "videos/diego-gamba.mp4"
     },
     {
       "id": "daniel-gandara",
@@ -72,7 +72,7 @@
       "type": "expert",
       "time": "12:00",
       "image": "images/daniel-gandara.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/daniel-gandara.mp4"
+      "video": "videos/daniel-gandara.mp4"
     },
     {
       "id": "esteban-ordano",
@@ -87,7 +87,7 @@
       "type": "expert",
       "time": "12:20",
       "image": "images/esteban-ordano.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/esteban-ordano.mp4"
+      "video": "videos/esteban-ordano.mp4"
     },
     {
       "id": "matias-boix",
@@ -130,7 +130,7 @@
       "type": "expert",
       "time": "13:20",
       "image": "images/leo-alvarez.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/leo-alvarez.mp4"
+      "video": "videos/leo-alvarez.mp4"
     },
     {
       "id": "andres-marrero",
@@ -145,7 +145,7 @@
       "type": "expert",
       "time": "13:40",
       "image": "images/andres-marrero.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/andres-marrero.mp4"
+      "video": "videos/andres-marrero.mp4"
     },
     {
       "id": "sebastian-sanchez",
@@ -160,7 +160,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/sebastian-sanchez.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/sebastian-sanchez.mp4"
+      "video": "videos/sebastian-sanchez.mp4"
     },
     {
       "id": "gonzalo-pittaluga",
@@ -175,7 +175,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/gonzalo-pittaluga.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/gonzalo-pittaluga.mp4"
+      "video": "videos/gonzalo-pittaluga.mp4"
     },
     {
       "id": "martin-eurnekian",
@@ -190,7 +190,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/martin-eurnekian.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/martin-eurnekian.mp4"
+      "video": "videos/martin-eurnekian.mp4"
     },
     {
       "id": "martin-dovat",
@@ -219,7 +219,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/orlando-dovat.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/orlando-dovat.mp4"
+      "video": "videos/orlando-dovat.mp4"
     },
     {
       "id": "juan-manuel-parada",
@@ -234,7 +234,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/juan-manuel-parada.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/juan-manuel-parada.mp4"
+      "video": "videos/juan-manuel-parada.mp4"
     },
     {
       "id": "joaquin-cabrera",
@@ -249,7 +249,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/joaquin-cabrera.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/joaquin-cabrera.mp4"
+      "video": "videos/joaquin-cabrera.mp4"
     },
     {
       "id": "agustin-tafernaberry",
@@ -278,7 +278,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/andres-packziarz.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/andres-packziarz.mp4"
+      "video": "videos/andres-packziarz.mp4"
     },
     {
       "id": "natty-manhard",
@@ -293,7 +293,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/natty-manhard.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/natty-manhard.mp4"
+      "video": "videos/natty-manhard.mp4"
     },
     {
       "id": "diego-forlan",
@@ -308,7 +308,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/diego-forlan.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/diego-forlan.mp4"
+      "video": "videos/diego-forlan.mp4"
     },
     {
       "id": "alejandro-gerwer",
@@ -323,7 +323,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/alejandro-gerwer.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/alejandro-gerwer.mp4"
+      "video": "videos/alejandro-gerwer.mp4"
     },
     {
       "id": "pipe-stein",
@@ -338,7 +338,7 @@
       "type": "ceo",
       "time": null,
       "image": "images/pipe-stein.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/pipe-stein.mp4"
+      "video": "videos/pipe-stein.mp4"
     },
     {
       "id": "mati-wolosky",
@@ -353,7 +353,7 @@
       "type": "incopy",
       "time": null,
       "image": "images/mati-wolosky.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/mati-wolosky.mp4"
+      "video": "videos/mati-wolosky.mp4"
     },
     {
       "id": "sergio-fogel",
@@ -368,7 +368,7 @@
       "type": "incopy",
       "time": null,
       "image": "images/sergio-fogel.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/sergio-fogel.mp4"
+      "video": "videos/sergio-fogel.mp4"
     },
     {
       "id": "hernan-kazah",
@@ -397,7 +397,7 @@
       "type": "incopy",
       "time": null,
       "image": "images/guibert-englebienne.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/guibert-englebienne.mp4"
+      "video": "videos/guibert-englebienne.mp4"
     },
     {
       "id": "martin-migoya",
@@ -426,7 +426,7 @@
       "type": "incopy",
       "time": null,
       "image": "images/martin-delosantos.jpg",
-      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/martin-delosantos.mp4"
+      "video": "videos/martin-delosantos.mp4"
     }
   ]
 }

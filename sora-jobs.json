@@ -1,0 +1,176 @@
+{
+  "nicolas-jodal": {
+    "jobId": "video_69a4e4956680819189e58f108611e8a9050186c2f71e33e4",
+    "name": "Nicolas Jodal",
+    "status": "completed",
+    "progress": 100
+  },
+  "ariel-lipchutz": {
+    "jobId": "video_69a4e498cf60819882819407d5f1d28300967d7007432eaa",
+    "name": "Ariel Lipchutz",
+    "status": "completed",
+    "progress": 100
+  },
+  "andi-bzurovski": {
+    "jobId": null,
+    "name": "Andi Bzurovski",
+    "status": "retry",
+    "progress": 0
+  },
+  "diego-gamba": {
+    "jobId": "video_69a4e49e3ecc81908f45f2286df71b920e20199f2e22ea7d",
+    "name": "Diego Gamba",
+    "status": "completed",
+    "progress": 100
+  },
+  "daniel-gandara": {
+    "jobId": "video_69a4e4a159a4819882fde1b38eeebc9504c202d28d271817",
+    "name": "Daniel Gandara",
+    "status": "completed",
+    "progress": 100
+  },
+  "esteban-ordano": {
+    "jobId": "video_69a4e4a449748193ad58d96a477154930c383ecfca1437ce",
+    "name": "Esteban \"Tibi\" Ordano",
+    "status": "completed",
+    "progress": 100
+  },
+  "matias-boix": {
+    "jobId": null,
+    "name": "Matias Boix",
+    "status": "retry",
+    "progress": 0
+  },
+  "gaston-milano": {
+    "jobId": null,
+    "name": "Gaston Milano",
+    "status": "retry",
+    "progress": 0
+  },
+  "leo-alvarez": {
+    "jobId": "video_69a4e4ad47248190983738039f9ab5a8038c1d5c56b7b3c6",
+    "name": "Leo Alvarez",
+    "status": "completed",
+    "progress": 100
+  },
+  "andres-marrero": {
+    "jobId": "video_69a4e4b07ab88191ac314b394bb178f60132fc28ce9b7b1f",
+    "name": "Andres Marrero",
+    "status": "completed",
+    "progress": 100
+  },
+  "sebastian-sanchez": {
+    "jobId": "video_69a4e4b3658c81938e7af21def3ef72601059fd31b14d953",
+    "name": "Sebastian Sanchez",
+    "status": "completed",
+    "progress": 100
+  },
+  "gonzalo-pittaluga": {
+    "jobId": "video_69a4e4b6f4a081989df4fa5276d1ca8806a03ec5c56b32e1",
+    "name": "Gonzalo Pittaluga",
+    "status": "completed",
+    "progress": 100
+  },
+  "martin-eurnekian": {
+    "jobId": "video_69a4e4b9d53081938106732f50a7148108f4f753cb195836",
+    "name": "Martin Eurnekian",
+    "status": "completed",
+    "progress": 100
+  },
+  "martin-dovat": {
+    "jobId": null,
+    "name": "Martin Dovat",
+    "status": "retry",
+    "progress": 0
+  },
+  "orlando-dovat": {
+    "jobId": "video_69a4e4bf7b1481908e9917309a478389084d0ec3c13caf77",
+    "name": "Orlando Dovat",
+    "status": "completed",
+    "progress": 100
+  },
+  "juan-manuel-parada": {
+    "jobId": "video_69a4e4c25ca48190847b6418d68f828a00ae45a2ebc1c909",
+    "name": "Juan Manuel Parada",
+    "status": "completed",
+    "progress": 100
+  },
+  "joaquin-cabrera": {
+    "jobId": "video_69a4e4c4ef808190b5b4635aa7556d2d006c7e50a7882ab4",
+    "name": "Joaquin Cabrera",
+    "status": "completed",
+    "progress": 100
+  },
+  "agustin-tafernaberry": {
+    "jobId": null,
+    "name": "Agustin Tafernaberry",
+    "status": "retry",
+    "progress": 0
+  },
+  "andres-packziarz": {
+    "jobId": "video_69a4e4ca23dc8190af21b92c1067e5570803c0693cd73feb",
+    "name": "Andres Packziarz",
+    "status": "completed",
+    "progress": 100
+  },
+  "natty-manhard": {
+    "jobId": "video_69a4e4ccb9cc8190b889ac7f4e5b9e4d009b5cdb12995580",
+    "name": "Natty Manhard",
+    "status": "completed",
+    "progress": 100
+  },
+  "diego-forlan": {
+    "jobId": "video_69a4e4cf627c81909b3cb4c836a2511707134e0c4d833da1",
+    "name": "Diego Forl\u00e1n",
+    "status": "completed",
+    "progress": 100
+  },
+  "alejandro-gerwer": {
+    "jobId": "video_69a4e4d27d4081919034ced7f6089e8f0a03abe0d518c55d",
+    "name": "Alejandro Gerwer",
+    "status": "completed",
+    "progress": 100
+  },
+  "pipe-stein": {
+    "jobId": "video_69a4e4d5b3008191908e09b8b0f749490455111af1d71f58",
+    "name": "Pipe Stein",
+    "status": "completed",
+    "progress": 100
+  },
+  "mati-wolosky": {
+    "jobId": "video_69a4e4d872848190b15e6880c24ddd9606571bec63d061f9",
+    "name": "Mati Wolosky",
+    "status": "completed",
+    "progress": 100
+  },
+  "sergio-fogel": {
+    "jobId": "video_69a4e4db6a58819397650d47896a752d00f581171ef4df27",
+    "name": "Sergio Fogel",
+    "status": "completed",
+    "progress": 100
+  },
+  "hernan-kazah": {
+    "jobId": null,
+    "name": "Hernan Kazah",
+    "status": "retry",
+    "progress": 0
+  },
+  "guibert-englebienne": {
+    "jobId": "video_69a4e4e1bb4c81989fe6f3fa8b21081d0ed161bda416a947",
+    "name": "Guibert Englebienne",
+    "status": "completed",
+    "progress": 100
+  },
+  "martin-migoya": {
+    "jobId": null,
+    "name": "Martin Migoya",
+    "status": "retry",
+    "progress": 0
+  },
+  "martin-delosantos": {
+    "jobId": "video_69a4e4e7303c81908729a5c6ba7a03e807df179101737740",
+    "name": "Martin Delosantos",
+    "status": "completed",
+    "progress": 100
+  }
+}
