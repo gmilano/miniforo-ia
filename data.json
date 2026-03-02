@@ -231,7 +231,8 @@
       "initials": "JP",
       "type": "ceo",
       "time": null,
-      "image": "images/juan-manuel-parada.jpg"
+      "image": "images/juan-manuel-parada.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/juan-manuel-parada.mp4"
     },
     {
       "id": "joaquin-cabrera",
