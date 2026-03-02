@@ -285,7 +285,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 
     <div class="modal-media" id="modal-media">
       <img id="modal-img" src="" alt="" style="display:none">
-      <video id="modal-video" controls playsinline preload="none"></video>
+      <video id="modal-video" controls playsinline autoplay muted loop preload="metadata"></video>
       <div class="modal-media-loading" id="modal-media-placeholder">
         <span>Cargando...</span>
       </div>
@@ -460,9 +460,13 @@ function openModal(id) {
   }
 
   if (p.video) {
+    if (p.image) vid.poster = p.image; // show image while video loads
     vid.src = p.video;
     vid.className = 'has-video';
-    img.style.display = 'none'; // video takes over
+    img.style.display = 'none';
+    placeholder.style.display = 'none';
+    vid.load();
+    vid.play().catch(()=>{}); // autoplay (silenced, so policy OK)
   }
 
   // Text
