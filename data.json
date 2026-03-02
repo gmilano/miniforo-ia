@@ -144,7 +144,8 @@
       "initials": "AM",
       "type": "expert",
       "time": "12:40",
-      "image": "images/andres-marrero.jpg"
+      "image": "images/andres-marrero.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/andres-marrero.mp4"
     },
     {
       "id": "sebastian-sanchez",
