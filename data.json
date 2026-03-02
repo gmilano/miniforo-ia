@@ -423,7 +423,8 @@
       "initials": "MD",
       "type": "incopy",
       "time": null,
-      "image": "images/martin-delosantos.jpg"
+      "image": "images/martin-delosantos.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/martin-delosantos.mp4"
     }
   ]
 }
