@@ -275,7 +275,8 @@
       "initials": "AP",
       "type": "ceo",
       "time": null,
-      "image": "images/andres-packziarz.jpg"
+      "image": "images/andres-packziarz.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/andres-packziarz.mp4"
     },
     {
       "id": "natty-manhard",
