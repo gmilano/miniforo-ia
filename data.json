@@ -71,7 +71,8 @@
       "initials": "DG",
       "type": "expert",
       "time": "11:00",
-      "image": "images/daniel-gandara.jpg"
+      "image": "images/daniel-gandara.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/daniel-gandara.mp4"
     },
     {
       "id": "esteban-ordano",
