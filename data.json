@@ -27,7 +27,8 @@
       "initials": "AL",
       "type": "expert",
       "time": "10:20",
-      "image": "images/ariel-lipchutz.jpg"
+      "image": "images/ariel-lipchutz.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/ariel-lipchutz.mp4"
     },
     {
       "id": "andi-bzurovski",
