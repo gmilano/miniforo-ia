@@ -414,7 +414,8 @@
       "initials": "MM",
       "type": "incopy",
       "time": null,
-      "image": "images/martin-migoya.jpg"
+      "image": "images/martin-migoya.jpg",
+      "video": "videos/martin-migoya.mp4"
     },
     {
       "id": "martin-delosantos",
