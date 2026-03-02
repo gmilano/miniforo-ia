@@ -157,7 +157,8 @@
       "initials": "SS",
       "type": "ceo",
       "time": null,
-      "image": "images/sebastian-sanchez.jpg"
+      "image": "images/sebastian-sanchez.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/sebastian-sanchez.mp4"
     },
     {
       "id": "gonzalo-pittaluga",
