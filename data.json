@@ -394,7 +394,8 @@
       "initials": "GE",
       "type": "incopy",
       "time": null,
-      "image": "images/guibert-englebienne.jpg"
+      "image": "images/guibert-englebienne.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/guibert-englebienne.mp4"
     },
     {
       "id": "martin-migoya",
