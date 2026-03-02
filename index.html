@@ -40,6 +40,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 
 /* SECTION */
 .section{padding:60px 20px;max-width:960px;margin:0 auto}
+.section-full{padding:60px 0;background:var(--card)}
+.section-full-inner{max-width:960px;margin:0 auto;padding:0 20px}
 .section-header{margin-bottom:40px}
 .section-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .section-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;letter-spacing:-.02em}
@@ -50,58 +52,85 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 .agenda::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--accent),transparent)}
 .agenda-item{position:relative;margin-bottom:24px;cursor:pointer}
 .agenda-item::before{content:'';position:absolute;left:-32px;top:16px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
-.agenda-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px 22px;transition:border-color .2s,transform .2s}
+.agenda-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:border-color .2s,transform .2s;display:flex;gap:0}
 .agenda-card:hover{border-color:var(--accent);transform:translateX(4px)}
-.agenda-time{font-size:.78rem;font-weight:600;color:var(--accent);letter-spacing:.04em;margin-bottom:6px}
-.agenda-name{font-size:1.05rem;font-weight:700;margin-bottom:2px}
-.agenda-role{font-size:.83rem;color:var(--muted)}
-.agenda-tagline{font-size:.85rem;color:var(--text);opacity:.75;margin-top:8px;line-height:1.5}
-.agenda-actions{display:flex;gap:10px;margin-top:12px}
-.btn-sm{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none;border:none}
+.agenda-img{width:120px;flex-shrink:0;object-fit:cover;background:var(--card2)}
+.agenda-img-placeholder{width:120px;flex-shrink:0;background:linear-gradient(135deg,#1a1a2e,#16213e);display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:800;color:rgba(255,255,255,.3)}
+.agenda-content{padding:18px 20px;flex:1}
+.agenda-time{font-size:.78rem;font-weight:600;color:var(--accent);letter-spacing:.04em;margin-bottom:5px}
+.agenda-name{font-size:1rem;font-weight:700;margin-bottom:2px}
+.agenda-role{font-size:.8rem;color:var(--muted)}
+.agenda-tagline{font-size:.83rem;color:var(--text);opacity:.7;margin-top:7px;line-height:1.5}
+
+/* GALLERY */
+.gallery-grid{columns:2;column-gap:12px;max-width:960px;margin:0 auto;padding:0 20px}
+@media(min-width:600px){.gallery-grid{columns:3}}
+@media(min-width:900px){.gallery-grid{columns:4}}
+.gallery-item{break-inside:avoid;margin-bottom:12px;cursor:pointer;border-radius:10px;overflow:hidden;position:relative;border:1px solid var(--border);transition:transform .2s,border-color .2s}
+.gallery-item:hover{transform:scale(1.02);border-color:var(--accent)}
+.gallery-item img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,transparent 55%);opacity:0;transition:opacity .2s;display:flex;flex-direction:column;justify-content:flex-end;padding:12px}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.gallery-overlay-name{font-size:.82rem;font-weight:700;color:#fff;line-height:1.3}
+.gallery-overlay-role{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:2px}
+.gallery-video-badge{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:3px 8px;font-size:.65rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:4px}
+
+/* PEOPLE GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.person-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);cursor:pointer;transition:border-color .2s,transform .2s;overflow:hidden}
+.person-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.person-card.special{border-color:rgba(255,215,0,.3)}
+.person-card.special:hover{border-color:rgba(255,215,0,.6)}
+.person-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--card2);display:block}
+.person-card-img-placeholder{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a2e,#16213e);display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:800;color:rgba(255,255,255,.3)}
+.person-card-body{padding:14px}
+.person-name{font-size:.88rem;font-weight:700;margin-bottom:3px;line-height:1.3}
+.person-role{font-size:.72rem;color:var(--muted);line-height:1.4}
+.person-co{font-size:.7rem;color:var(--accent);margin-top:2px}
+.special-badge{display:inline-block;background:rgba(255,215,0,.12);border:1px solid rgba(255,215,0,.25);color:#ffd700;font-size:.62rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:100px;margin-top:5px}
+
+/* INCOPY */
+.incopy-grid{display:flex;flex-wrap:wrap;gap:12px}
+.incopy-chip{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:100px;padding:8px 14px 8px 8px;cursor:pointer;transition:border-color .2s}
+.incopy-chip:hover{border-color:var(--accent)}
+.incopy-avatar{width:36px;height:36px;border-radius:50%;object-fit:cover;background:var(--card2);flex-shrink:0}
+.incopy-avatar-ph{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#333,#555);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:800;flex-shrink:0}
+.incopy-name{font-size:.83rem;font-weight:600}
+.incopy-co{font-size:.7rem;color:var(--muted)}
+
+/* BTN */
+.btn-sm{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:100px;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none;border:none}
 .btn-outline{background:transparent;border:1px solid var(--border);color:var(--muted)}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
 .btn-primary{background:var(--accent);color:#fff}
 .btn-primary:hover{background:#0958a8}
 
-/* PEOPLE GRID */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.person-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px 18px;cursor:pointer;transition:border-color .2s,transform .2s;text-align:center}
-.person-card:hover{border-color:var(--accent);transform:translateY(-3px)}
-.person-card.special{border-color:rgba(255,215,0,.3);background:linear-gradient(135deg,var(--card),rgba(255,215,0,.04))}
-.person-card.special:hover{border-color:rgba(255,215,0,.6)}
-.avatar{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;margin:0 auto 12px;background:linear-gradient(135deg,var(--accent),#0a2a5e)}
-.person-card.special .avatar{background:linear-gradient(135deg,#b8860b,#ffd700)}
-.person-name{font-size:.92rem;font-weight:700;margin-bottom:3px;line-height:1.3}
-.person-role{font-size:.75rem;color:var(--muted);line-height:1.4}
-.special-badge{display:inline-block;background:rgba(255,215,0,.15);border:1px solid rgba(255,215,0,.3);color:#ffd700;font-size:.64rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:100px;margin-top:6px}
-
-/* INCOPY */
-.incopy-grid{display:flex;flex-wrap:wrap;gap:12px}
-.incopy-chip{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:100px;padding:10px 16px;cursor:pointer;transition:border-color .2s}
-.incopy-chip:hover{border-color:var(--accent)}
-.incopy-avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#333,#555);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:800;flex-shrink:0}
-.incopy-name{font-size:.83rem;font-weight:600}
-.incopy-co{font-size:.72rem;color:var(--muted)}
-
 /* MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .25s}
 .modal-overlay.open{opacity:1;pointer-events:all}
-.modal{background:var(--card);border:1px solid var(--border);border-radius:20px;max-width:520px;width:100%;max-height:85vh;overflow-y:auto;position:relative;transform:translateY(20px);transition:transform .25s}
+.modal{background:var(--card);border:1px solid var(--border);border-radius:20px;max-width:580px;width:100%;max-height:92vh;overflow-y:auto;position:relative;transform:translateY(20px);transition:transform .25s}
 .modal-overlay.open .modal{transform:translateY(0)}
-.modal-header{padding:28px 28px 20px;border-bottom:1px solid var(--border)}
-.modal-avatar{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin-bottom:16px;background:linear-gradient(135deg,var(--accent),#0a2a5e)}
-.modal-avatar.special{background:linear-gradient(135deg,#b8860b,#ffd700)}
-.modal-name{font-size:1.4rem;font-weight:800;margin-bottom:4px;letter-spacing:-.02em}
-.modal-role{color:var(--muted);font-size:.9rem;margin-bottom:12px}
-.modal-tagline{font-size:.95rem;color:var(--accent);font-style:italic;line-height:1.5}
-.modal-body{padding:22px 28px 28px}
-.modal-section{margin-bottom:22px}
-.modal-section-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.modal-bio{font-size:.93rem;line-height:1.75;color:#d0d0d0}
-.modal-company{font-size:.87rem;color:var(--muted);line-height:1.6;padding:14px;background:var(--card2);border-radius:10px}
+.modal-media{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px 16px 0 0;background:var(--card2)}
+.modal-media img{width:100%;height:100%;object-fit:cover}
+.modal-media video{width:100%;height:100%;object-fit:cover;display:none}
+.modal-media video.has-video{display:block}
+.modal-media-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--muted)}
+.modal-play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);cursor:pointer;transition:background .2s}
+.modal-play-btn:hover{background:rgba(0,0,0,.1)}
+.modal-play-btn svg{filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.modal-play-btn.playing{display:none}
+.modal-header{padding:22px 24px 16px}
+.modal-name{font-size:1.3rem;font-weight:800;margin-bottom:3px;letter-spacing:-.02em}
+.modal-role{color:var(--muted);font-size:.87rem;margin-bottom:10px}
+.modal-tagline{font-size:.92rem;color:var(--accent);font-style:italic;line-height:1.5}
+.modal-body{padding:0 24px 24px}
+.modal-section{margin-bottom:20px}
+.modal-section-label{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.modal-bio{font-size:.9rem;line-height:1.8;color:#ccc}
+.modal-company{font-size:.85rem;color:var(--muted);line-height:1.6;padding:12px;background:var(--card2);border-radius:10px}
 .modal-actions{display:flex;gap:10px;flex-wrap:wrap}
-.modal-close{position:absolute;top:16px;right:16px;background:var(--card2);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;color:var(--muted);font-size:1rem;display:flex;align-items:center;justify-content:center;transition:color .2s}
-.modal-close:hover{color:#fff}
+.modal-close{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.5);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;color:#fff;font-size:.9rem;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}
+.modal-close:hover{background:rgba(0,0,0,.8)}
 
 /* FAQ */
 .faq-list{display:flex;flex-direction:column;gap:12px}
@@ -119,12 +148,12 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 .footer-brand span{color:var(--accent)}
 .footer-sub{font-size:.82rem;color:var(--muted)}
 
-/* RESPONSIVE */
 @media(max-width:600px){
   .nav-links{display:none}
   .hero{padding:60px 20px 40px}
   .section{padding:40px 16px}
-  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .agenda-img,.agenda-img-placeholder{width:80px}
 }
 </style>
 </head>
@@ -134,6 +163,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
   <div class="nav-brand">Foro<span>IA</span></div>
   <div class="nav-links">
     <a href="#agenda">Agenda</a>
+    <a href="#galeria">Galería</a>
     <a href="#expertos">Expertos</a>
     <a href="#empresas">Empresas</a>
     <a href="#faq">FAQ</a>
@@ -165,23 +195,31 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
   <div class="section-header">
     <div class="section-label">Programa</div>
     <div class="section-title">Agenda del Foro</div>
-    <div class="section-sub">Speakers confirmados con horario asignado. Click en cada uno para ver su historia.</div>
+    <div class="section-sub">Speakers confirmados con horario asignado. Click para ver su historia.</div>
   </div>
-  <div class="agenda" id="agenda-list">
-    <!-- JS rellena -->
-  </div>
+  <div class="agenda" id="agenda-list"></div>
 </div>
 
-<!-- EXPERTOS (sin horario) -->
+<!-- GALERÍA -->
+<div class="section-full" id="galeria">
+  <div class="section-full-inner">
+    <div class="section-header">
+      <div class="section-label">Visual AI</div>
+      <div class="section-title">Galería de Participantes</div>
+      <div class="section-sub">Imágenes generadas con DALL-E 3 · Videos con Sora 2 — click para explorar cada historia.</div>
+    </div>
+  </div>
+  <div class="gallery-grid" id="gallery-grid"></div>
+</div>
+
+<!-- EXPERTOS -->
 <div class="section" id="expertos">
   <div class="section-header">
     <div class="section-label">Speakers</div>
     <div class="section-title">Todos los Expertos</div>
     <div class="section-sub">Los referentes en IA, tech y negocios que comparten su visión.</div>
   </div>
-  <div class="grid" id="experts-grid">
-    <!-- JS rellena -->
-  </div>
+  <div class="grid" id="experts-grid"></div>
 </div>
 
 <!-- EMPRESAS / CEOs -->
@@ -191,9 +229,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     <div class="section-title">CEOs & Directivos</div>
     <div class="section-sub">Los líderes empresariales que se suman a la conversación.</div>
   </div>
-  <div class="grid" id="ceos-grid">
-    <!-- JS rellena -->
-  </div>
+  <div class="grid" id="ceos-grid"></div>
 </div>
 
 <!-- EN COPIA -->
@@ -203,9 +239,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     <div class="section-title">Referentes del Ecosistema</div>
     <div class="section-sub">Fundadores e íconos del tech latinoamericano que son parte de esta conversación.</div>
   </div>
-  <div class="incopy-grid" id="incopy-grid">
-    <!-- JS rellena -->
-  </div>
+  <div class="incopy-grid" id="incopy-grid"></div>
 </div>
 
 <!-- FAQ -->
@@ -241,14 +275,23 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <footer>
   <div class="footer-brand">Mini Foro <span>IA</span></div>
   <div class="footer-sub">Organizado por Fabián Kopel · Montevideo, Uruguay</div>
+  <div style="margin-top:12px;font-size:.75rem;color:#444">Imágenes: DALL-E 3 · Videos: Sora 2</div>
 </footer>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
   <div class="modal" id="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
+
+    <div class="modal-media" id="modal-media">
+      <img id="modal-img" src="" alt="" style="display:none">
+      <video id="modal-video" controls playsinline preload="none"></video>
+      <div class="modal-media-loading" id="modal-media-placeholder">
+        <span>Cargando...</span>
+      </div>
+    </div>
+
     <div class="modal-header">
-      <div class="modal-avatar" id="modal-avatar"></div>
       <div class="modal-name" id="modal-name"></div>
       <div class="modal-role" id="modal-role"></div>
       <div class="modal-tagline" id="modal-tagline"></div>
@@ -281,64 +324,111 @@ async function init() {
   }
 }
 
+function getInitials(name) {
+  return name.replace(/"/g,'').split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
+}
+
+function imgTag(p, cls='') {
+  if (p.image) return `<img class="${cls}" src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="${cls.replace('img','img-placeholder') || 'person-card-img-placeholder'}" style="display:none">${getInitials(p.name)}</div>`;
+  return `<div class="${cls.replace('img','img-placeholder') || 'person-card-img-placeholder'}">${getInitials(p.name)}</div>`;
+}
+
 function renderAll() {
   renderAgenda();
+  renderGallery();
   renderExperts();
   renderCEOs();
   renderInCopy();
 }
 
-function getInitials(name) {
-  return name.split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase();
-}
-
-function agendaCardHTML(p) {
-  const isSpecial = p.id === 'diego-forlan';
-  return `
+/* ─── AGENDA ─── */
+function renderAgenda() {
+  const experts = peopleData.filter(p => p.type==='expert' && p.time).sort((a,b)=>a.time.localeCompare(b.time));
+  document.getElementById('agenda-list').innerHTML = experts.map(p => `
     <div class="agenda-item" onclick="openModal('${p.id}')">
       <div class="agenda-card">
-        <div class="agenda-time">${p.time || ''}</div>
-        <div class="agenda-name">${p.name}${isSpecial ? ' ⭐' : ''}</div>
-        <div class="agenda-role">${p.role} · ${p.company}</div>
-        <div class="agenda-tagline">${p.tagline}</div>
-        <div class="agenda-actions">
-          <span class="btn-sm btn-outline">Ver historia →</span>
+        ${p.image
+          ? `<img class="agenda-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+          : `<div class="agenda-img-placeholder">${getInitials(p.name)}</div>`
+        }
+        <div class="agenda-content">
+          <div class="agenda-time">${p.time}</div>
+          <div class="agenda-name">${p.name}</div>
+          <div class="agenda-role">${p.role} · ${p.company}</div>
+          <div class="agenda-tagline">${p.tagline}</div>
         </div>
       </div>
-    </div>`;
+    </div>`).join('');
 }
 
-function personCardHTML(p) {
-  const isSpecial = p.id === 'diego-forlan';
-  return `
-    <div class="person-card${isSpecial?' special':''}" onclick="openModal('${p.id}')">
-      <div class="avatar${isSpecial?' special':''}">${getInitials(p.name)}</div>
-      <div class="person-name">${p.name}</div>
-      <div class="person-role">${p.role}<br><span style="color:var(--accent);font-size:.7rem">${p.company}</span></div>
-      ${isSpecial ? '<div class="special-badge">⭐ Invitado Especial</div>' : ''}
-    </div>`;
+/* ─── GALLERY ─── */
+function renderGallery() {
+  document.getElementById('gallery-grid').innerHTML = peopleData.map(p => `
+    <div class="gallery-item" onclick="openModal('${p.id}')">
+      ${p.image
+        ? `<img src="${p.image}" alt="${p.name}" loading="lazy">`
+        : `<div style="aspect-ratio:16/9;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:800;color:rgba(255,255,255,.2)">${getInitials(p.name)}</div>`
+      }
+      ${p.video ? `<div class="gallery-video-badge">▶ Video</div>` : ''}
+      <div class="gallery-overlay">
+        <div class="gallery-overlay-name">${p.name}</div>
+        <div class="gallery-overlay-role">${p.role}</div>
+      </div>
+    </div>`).join('');
 }
 
-function renderAgenda() {
-  const experts = peopleData.filter(p => p.type === 'expert' && p.time).sort((a,b) => a.time.localeCompare(b.time));
-  document.getElementById('agenda-list').innerHTML = experts.map(agendaCardHTML).join('');
-}
-
+/* ─── EXPERTS GRID ─── */
 function renderExperts() {
-  const experts = peopleData.filter(p => p.type === 'expert');
-  document.getElementById('experts-grid').innerHTML = experts.map(personCardHTML).join('');
+  const experts = peopleData.filter(p => p.type==='expert');
+  document.getElementById('experts-grid').innerHTML = experts.map(p => {
+    const isSpecial = p.id === 'diego-forlan';
+    return `
+    <div class="person-card${isSpecial?' special':''}" onclick="openModal('${p.id}')">
+      ${p.image
+        ? `<img class="person-card-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+        : `<div class="person-card-img-placeholder">${getInitials(p.name)}</div>`
+      }
+      <div class="person-card-body">
+        <div class="person-name">${p.name}</div>
+        <div class="person-role">${p.role}</div>
+        <div class="person-co">${p.company}</div>
+        ${isSpecial ? '<div class="special-badge">⭐ Invitado Especial</div>' : ''}
+      </div>
+    </div>`;
+  }).join('');
 }
 
+/* ─── CEOs GRID ─── */
 function renderCEOs() {
-  const ceos = peopleData.filter(p => p.type === 'ceo');
-  document.getElementById('ceos-grid').innerHTML = ceos.map(personCardHTML).join('');
+  const ceos = peopleData.filter(p => p.type==='ceo');
+  document.getElementById('ceos-grid').innerHTML = ceos.map(p => {
+    const isSpecial = p.id === 'diego-forlan';
+    return `
+    <div class="person-card${isSpecial?' special':''}" onclick="openModal('${p.id}')">
+      ${p.image
+        ? `<img class="person-card-img" src="${p.image}" alt="${p.name}" loading="lazy">`
+        : `<div class="person-card-img-placeholder">${getInitials(p.name)}</div>`
+      }
+      <div class="person-card-body">
+        <div class="person-name">${p.name}</div>
+        <div class="person-role">${p.role}</div>
+        <div class="person-co">${p.company}</div>
+        ${isSpecial ? '<div class="special-badge">⭐ Invitado Especial</div>' : ''}
+      </div>
+    </div>`;
+  }).join('');
 }
 
+/* ─── IN COPY ─── */
 function renderInCopy() {
-  const incopy = peopleData.filter(p => p.type === 'incopy');
+  const incopy = peopleData.filter(p => p.type==='incopy');
   document.getElementById('incopy-grid').innerHTML = incopy.map(p => `
     <div class="incopy-chip" onclick="openModal('${p.id}')">
-      <div class="incopy-avatar">${getInitials(p.name)}</div>
+      ${p.image
+        ? `<img class="incopy-avatar" src="${p.image}" alt="${p.name}">`
+        : `<div class="incopy-avatar-ph">${getInitials(p.name)}</div>`
+      }
       <div>
         <div class="incopy-name">${p.name}</div>
         <div class="incopy-co">${p.company || p.role}</div>
@@ -346,22 +436,46 @@ function renderInCopy() {
     </div>`).join('');
 }
 
+/* ─── MODAL ─── */
 function openModal(id) {
   const p = peopleData.find(x => x.id === id);
   if (!p) return;
-  const isSpecial = id === 'diego-forlan';
-  const av = document.getElementById('modal-avatar');
-  av.textContent = getInitials(p.name);
-  av.className = 'modal-avatar' + (isSpecial ? ' special' : '');
+
+  // Media
+  const img = document.getElementById('modal-img');
+  const vid = document.getElementById('modal-video');
+  const placeholder = document.getElementById('modal-media-placeholder');
+
+  vid.pause();
+  vid.src = '';
+  vid.className = '';
+  img.style.display = 'none';
+  placeholder.style.display = 'flex';
+
+  if (p.image) {
+    img.src = p.image;
+    img.alt = p.name;
+    img.style.display = 'block';
+    placeholder.style.display = 'none';
+  }
+
+  if (p.video) {
+    vid.src = p.video;
+    vid.className = 'has-video';
+    img.style.display = 'none'; // video takes over
+  }
+
+  // Text
   document.getElementById('modal-name').textContent = p.name;
   document.getElementById('modal-role').textContent = p.role + (p.company ? ' · ' + p.company : '');
   document.getElementById('modal-tagline').textContent = p.tagline;
   document.getElementById('modal-bio').textContent = p.bio;
   document.getElementById('modal-company').textContent = p.company_desc;
-  
-  const actions = document.getElementById('modal-actions');
+
+  // LinkedIn button
   const liSVG = `<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>`;
   const li = p.linkedin || '';
+  const actions = document.getElementById('modal-actions');
   if (li.includes('/in/')) {
     actions.innerHTML = `<a href="${li}" target="_blank" rel="noopener" class="btn-sm btn-primary">${liSVG} Ver perfil</a>`;
   } else if (li.includes('/search/')) {
@@ -369,12 +483,15 @@ function openModal(id) {
   } else {
     actions.innerHTML = '';
   }
-  
+
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
+  const vid = document.getElementById('modal-video');
+  vid.pause();
+  vid.src = '';
   document.getElementById('modal-overlay').classList.remove('open');
   document.body.style.overflow = '';
 }
@@ -385,12 +502,9 @@ function closeModalOutside(e) {
 
 document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
-// FAQ
+/* ─── FAQ ─── */
 document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    item.classList.toggle('open');
-  });
+  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
 });
 
 init();
