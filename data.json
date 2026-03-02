@@ -365,7 +365,8 @@
       "initials": "SF",
       "type": "incopy",
       "time": null,
-      "image": "images/sergio-fogel.jpg"
+      "image": "images/sergio-fogel.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/sergio-fogel.mp4"
     },
     {
       "id": "hernan-kazah",
