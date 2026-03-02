@@ -335,7 +335,8 @@
       "initials": "PS",
       "type": "ceo",
       "time": null,
-      "image": "images/pipe-stein.jpg"
+      "image": "images/pipe-stein.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/pipe-stein.mp4"
     },
     {
       "id": "mati-wolosky",
