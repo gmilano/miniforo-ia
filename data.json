@@ -216,7 +216,8 @@
       "initials": "OD",
       "type": "ceo",
       "time": null,
-      "image": "images/orlando-dovat.jpg"
+      "image": "images/orlando-dovat.jpg",
+      "video": "https://github.com/gmilano/miniforo-ia/releases/download/v1-media/orlando-dovat.mp4"
     },
     {
       "id": "juan-manuel-parada",
