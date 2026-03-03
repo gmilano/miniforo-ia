@@ -185,18 +185,21 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <nav>
   <div class="nav-brand">Foro<span>IA</span></div>
   <div class="nav-links">
-    <a href="#formato">Formato</a>
-    <a href="#agenda">Agenda</a>
-    <a href="#galeria">Galería</a>
-    <a href="#expertos">Expertos</a>
-    <a href="#empresas">Empresas</a>
+    <a href="#formato" data-i18n="nav_formato">Formato</a>
+    <a href="#agenda" data-i18n="nav_agenda">Agenda</a>
+    <a href="#galeria" data-i18n="nav_galeria">Galería</a>
+    <a href="#expertos" data-i18n="nav_expertos">Expertos</a>
+    <a href="#empresas" data-i18n="nav_empresas">Empresas</a>
   </div>
+  <button id="lang-toggle" onclick="toggleLang()" style="background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:100px;padding:5px 13px;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:5px" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+    <span id="lang-label">🇬🇧 EN</span>
+  </button>
 </nav>
 
 <div class="hero">
   <div class="hero-tag">🇺🇾 Uruguay · Tech & Business</div>
-  <h1>Uruguay habla de<br><em>Inteligencia Artificial</em></h1>
-  <p>Líderes del ecosistema tech y empresarial se reúnen en el Mini Foro IA de Fabián Kopel para explorar cómo la IA está transformando los negocios.</p>
+  <h1 data-i18n="hero_h1_es" data-i18n-en="Uruguay talks about<br><em>Artificial Intelligence</em>">Uruguay habla de<br><em>Inteligencia Artificial</em></h1>
+  <p data-i18n="hero_desc">Líderes del ecosistema tech y empresarial se reúnen en el Mini Foro IA de Fabián Kopel para explorar cómo la IA está transformando los negocios.</p>
   <div class="hero-meta">
     <div class="hero-meta-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -208,7 +211,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     </div>
     <div class="hero-meta-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      29 participantes
+      <span data-i18n="hero_participants">29 participantes</span>
     </div>
   </div>
 </div>
@@ -216,50 +219,50 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <!-- FORMATO -->
 <div class="section" id="formato">
   <div class="section-header">
-    <div class="section-label">Formato del Evento</div>
-    <div class="section-title">Cómo será el día</div>
-    <div class="section-sub">Un encuentro íntimo, dinámico y sin protocolo — diseñado para que fluya la conversación real.</div>
+    <div class="section-label" data-i18n="fmt_label">Formato del Evento</div>
+    <div class="section-title" data-i18n="fmt_title">Cómo será el día</div>
+    <div class="section-sub" data-i18n="fmt_sub">Un encuentro íntimo, dinámico y sin protocolo — diseñado para que fluya la conversación real.</div>
   </div>
 
   <div class="formato-grid">
     <div class="formato-block">
       <div class="formato-time">11:00 – 11:20</div>
-      <div class="formato-title">👥 Recepción</div>
-      <div class="formato-desc">Presentación de integrantes con empresa y rol. Se realiza en deck. Café desde el primer momento.</div>
+      <div class="formato-title" data-i18n="fmt_b1_title">👥 Recepción</div>
+      <div class="formato-desc" data-i18n="fmt_b1_desc">Presentación de integrantes con empresa y rol. Se realiza en deck. Café desde el primer momento.</div>
     </div>
     <div class="formato-block highlight">
       <div class="formato-time">11:20 – 12:50</div>
-      <div class="formato-title">🎤 Ronda de Expertos</div>
-      <div class="formato-desc">10 presentaciones de 10 minutos cada una. Cada experto comparte su visión sobre IA en su industria. Moderador: Fabián Kopel.</div>
+      <div class="formato-title" data-i18n="fmt_b2_title">🎤 Ronda de Expertos</div>
+      <div class="formato-desc" data-i18n="fmt_b2_desc">10 presentaciones de 10 minutos cada una. Cada experto comparte su visión sobre IA en su industria. Moderador: Fabián Kopel.</div>
     </div>
     <div class="formato-block highlight">
       <div class="formato-time">12:50 – 14:30</div>
-      <div class="formato-title">🏢 Ronda de CEOs</div>
-      <div class="formato-desc">Cada empresario presenta en 3 minutos sus puntos de dolor. Bloques de 10 min con intercambio directo con los expertos. A las 12:50 se sirve la picada, a las 13:30 ensaladas y asado — sin cortar las charlas (de a 3 personas).</div>
+      <div class="formato-title" data-i18n="fmt_b3_title">🏢 Ronda de CEOs</div>
+      <div class="formato-desc" data-i18n="fmt_b3_desc">Cada empresario presenta en 3 minutos sus puntos de dolor. Bloques de 10 min con intercambio directo con los expertos. A las 12:50 se sirve la picada, a las 13:30 ensaladas y asado — sin cortar las charlas (de a 3 personas).</div>
     </div>
     <div class="formato-block">
-      <div class="formato-time">14:30 en adelante</div>
-      <div class="formato-title">🤝 Networking libre</div>
-      <div class="formato-desc">Toda la tarde disponible para hablar con los expertos, intercambiar, y programar reuniones futuras. Sin reloj, sin protocolo.</div>
+      <div class="formato-time" data-i18n="fmt_b4_time">14:30 en adelante</div>
+      <div class="formato-title" data-i18n="fmt_b4_title">🤝 Networking libre</div>
+      <div class="formato-desc" data-i18n="fmt_b4_desc">Toda la tarde disponible para hablar con los expertos, intercambiar, y programar reuniones futuras. Sin reloj, sin protocolo.</div>
     </div>
   </div>
 
   <div class="formato-chips">
-    <div class="chip"><span>☕</span> Café durante todo el evento</div>
-    <div class="chip"><span>🥗</span> Picada 12:50 · Asado y ensaladas 13:30</div>
-    <div class="chip"><span>🪑</span> Mesa central ~30 personas con acompañante</div>
-    <div class="chip"><span>🎥</span> Grabación confidencial — link privado para cada CEO</div>
-    <div class="chip"><span>👁</span> 2dos mandos presentes como oyentes</div>
-    <div class="chip"><span>🔕</span> Cámara se corta si alguien no quiere ser grabado</div>
+    <div class="chip"><span>☕</span> <span data-i18n="chip1">Café durante todo el evento</span></div>
+    <div class="chip"><span>🥗</span> <span data-i18n="chip2">Picada 12:50 · Asado y ensaladas 13:30</span></div>
+    <div class="chip"><span>🪑</span> <span data-i18n="chip3">Mesa central ~30 personas con acompañante</span></div>
+    <div class="chip"><span>🎥</span> <span data-i18n="chip4">Grabación confidencial — link privado para cada CEO</span></div>
+    <div class="chip"><span>👁</span> <span data-i18n="chip5">2dos mandos presentes como oyentes</span></div>
+    <div class="chip"><span>🔕</span> <span data-i18n="chip6">Cámara se corta si alguien no quiere ser grabado</span></div>
   </div>
 </div>
 
 <!-- AGENDA -->
 <div class="section" id="agenda">
   <div class="section-header">
-    <div class="section-label">Programa</div>
-    <div class="section-title">Agenda del Foro</div>
-    <div class="section-sub">Horarios confirmados en hora Uruguay. Click en cada speaker para ver su historia y video.</div>
+    <div class="section-label" data-i18n="ag_label">Programa</div>
+    <div class="section-title" data-i18n="ag_title">Agenda del Foro</div>
+    <div class="section-sub" data-i18n="ag_sub">Horarios confirmados en hora Uruguay. Click en cada speaker para ver su historia y video.</div>
   </div>
   <div class="agenda" id="agenda-list"></div>
 </div>
@@ -269,8 +272,8 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
   <div class="section-full-inner">
     <div class="section-header">
       <div class="section-label">Visual AI</div>
-      <div class="section-title">Galería de Participantes</div>
-      <div class="section-sub">Imágenes generadas con DALL-E 3 · Videos con Sora 2 — click para explorar cada historia.</div>
+      <div class="section-title" data-i18n="gal_title">Galería de Participantes</div>
+      <div class="section-sub" data-i18n="gal_sub">Imágenes generadas con DALL-E 3 · Videos con Sora 2 — click para explorar cada historia.</div>
     </div>
   </div>
   <div class="gallery-grid" id="gallery-grid"></div>
@@ -280,8 +283,8 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <div class="section" id="expertos">
   <div class="section-header">
     <div class="section-label">Speakers</div>
-    <div class="section-title">Todos los Expertos</div>
-    <div class="section-sub">Los referentes en IA, tech y negocios que comparten su visión.</div>
+    <div class="section-title" data-i18n="exp_title">Todos los Expertos</div>
+    <div class="section-sub" data-i18n="exp_sub">Los referentes en IA, tech y negocios que comparten su visión.</div>
   </div>
   <div class="grid" id="experts-grid"></div>
 </div>
@@ -289,9 +292,9 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <!-- EMPRESAS / CEOs -->
 <div class="section" id="empresas">
   <div class="section-header">
-    <div class="section-label">Empresas</div>
-    <div class="section-title">CEOs & Directivos</div>
-    <div class="section-sub">Los líderes empresariales que se suman a la conversación.</div>
+    <div class="section-label" data-i18n="ceo_label">Empresas</div>
+    <div class="section-title" data-i18n="ceo_title">CEOs & Directivos</div>
+    <div class="section-sub" data-i18n="ceo_sub">Los líderes empresariales que se suman a la conversación.</div>
   </div>
   <div class="grid" id="ceos-grid"></div>
 </div>
@@ -299,9 +302,9 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <!-- EN COPIA -->
 <div class="section">
   <div class="section-header">
-    <div class="section-label">En Copia</div>
-    <div class="section-title">Referentes del Ecosistema</div>
-    <div class="section-sub">Fundadores e íconos del tech latinoamericano que son parte de esta conversación.</div>
+    <div class="section-label" data-i18n="ic_label">En Copia</div>
+    <div class="section-title" data-i18n="ic_title">Referentes del Ecosistema</div>
+    <div class="section-sub" data-i18n="ic_sub">Fundadores e íconos del tech latinoamericano que son parte de esta conversación.</div>
   </div>
   <div class="incopy-grid" id="incopy-grid"></div>
 </div>
@@ -310,28 +313,28 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <div class="section" id="faq">
   <div class="section-header">
     <div class="section-label">FAQ</div>
-    <div class="section-title">Preguntas Frecuentes</div>
+    <div class="section-title" data-i18n="faq_title">Preguntas Frecuentes</div>
   </div>
   <div class="faq-list">
     <div class="faq-item">
-      <div class="faq-q">¿Qué es el Mini Foro IA? <span class="chevron">▼</span></div>
-      <div class="faq-a">Es un encuentro íntimo organizado por Fabián Kopel donde líderes del ecosistema tech y empresarial uruguayo se reúnen para explorar cómo la inteligencia artificial está transformando los negocios. No es una conferencia masiva — es una conversación entre personas que están construyendo el futuro.</div>
+      <div class="faq-q"><span data-i18n="faq1_q">¿Qué es el Mini Foro IA?</span> <span class="chevron">▼</span></div>
+      <div class="faq-a" data-i18n="faq1_a">Es un encuentro íntimo organizado por Fabián Kopel donde líderes del ecosistema tech y empresarial uruguayo se reúnen para explorar cómo la inteligencia artificial está transformando los negocios. No es una conferencia masiva — es una conversación entre personas que están construyendo el futuro.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">¿Quiénes pueden asistir? <span class="chevron">▼</span></div>
-      <div class="faq-a">El foro es por invitación. Los participantes son CEOs, directores, founders y líderes tech con ganas genuinas de entender y adoptar la IA en sus organizaciones. El foco está en la calidad de la conversación, no en el volumen de asistentes.</div>
+      <div class="faq-q"><span data-i18n="faq2_q">¿Quiénes pueden asistir?</span> <span class="chevron">▼</span></div>
+      <div class="faq-a" data-i18n="faq2_a">El foro es por invitación. Los participantes son CEOs, directores, founders y líderes tech con ganas genuinas de entender y adoptar la IA en sus organizaciones. El foco está en la calidad de la conversación, no en el volumen de asistentes.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">¿De qué se habla exactamente? <span class="chevron">▼</span></div>
-      <div class="faq-a">Casos reales de implementación de IA en empresas uruguayas y regionales, oportunidades y riesgos, cómo construir capacidades de IA en las organizaciones, y el futuro del trabajo y los negocios en un mundo con inteligencia artificial. Sin hype, solo sustancia.</div>
+      <div class="faq-q"><span data-i18n="faq3_q">¿De qué se habla exactamente?</span> <span class="chevron">▼</span></div>
+      <div class="faq-a" data-i18n="faq3_a">Casos reales de implementación de IA en empresas uruguayas y regionales, oportunidades y riesgos, cómo construir capacidades de IA en las organizaciones, y el futuro del trabajo y los negocios en un mundo con inteligencia artificial. Sin hype, solo sustancia.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">¿Hay networking? <span class="chevron">▼</span></div>
-      <div class="faq-a">El formato del foro está diseñado para maximizar las conexiones genuinas entre participantes. Con 29 personas seleccionadas, cada conversación tiene potencial de convertirse en una colaboración real.</div>
+      <div class="faq-q"><span data-i18n="faq4_q">¿Hay networking?</span> <span class="chevron">▼</span></div>
+      <div class="faq-a" data-i18n="faq4_a">El formato del foro está diseñado para maximizar las conexiones genuinas entre participantes. Con 29 personas seleccionadas, cada conversación tiene potencial de convertirse en una colaboración real.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">¿Cómo contacto a Fabián? <span class="chevron">▼</span></div>
-      <div class="faq-a">Podés contactar a Fabián Kopel directamente a través de LinkedIn o por los canales de comunicación del foro. Este evento es su iniciativa personal de generar conversaciones de impacto en el ecosistema uruguayo.</div>
+      <div class="faq-q"><span data-i18n="faq5_q">¿Cómo contacto a Fabián?</span> <span class="chevron">▼</span></div>
+      <div class="faq-a" data-i18n="faq5_a">Podés contactar a Fabián Kopel directamente a través de LinkedIn o por los canales de comunicación del foro. Este evento es su iniciativa personal de generar conversaciones de impacto en el ecosistema uruguayo.</div>
     </div>
   </div>
 </div>
@@ -359,7 +362,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 
 <footer>
   <div class="footer-brand">Mini Foro <span>IA</span></div>
-  <div class="footer-sub">Organizado por Fabián Kopel · Montevideo, Uruguay</div>
+  <div class="footer-sub" data-i18n="footer_sub">Organizado por Fabián Kopel · Montevideo, Uruguay</div>
   <div style="margin-top:12px;font-size:.75rem;color:#444">Imágenes: DALL-E 3 · Videos: Sora 2</div>
 </footer>
 
@@ -383,11 +386,11 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     </div>
     <div class="modal-body">
       <div class="modal-section">
-        <div class="modal-section-label">Su historia</div>
+        <div class="modal-section-label" data-i18n="modal_bio_label">Su historia</div>
         <div class="modal-bio" id="modal-bio"></div>
       </div>
       <div class="modal-section">
-        <div class="modal-section-label">La empresa</div>
+        <div class="modal-section-label" data-i18n="modal_co_label">La empresa</div>
         <div class="modal-company" id="modal-company"></div>
       </div>
       <div class="modal-actions" id="modal-actions"></div>
@@ -398,12 +401,136 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
 <script>
 let peopleData = [];
 
+// ─── i18n ────────────────────────────────────────────────────────────────────
+let lang = 'es';
+
+const TRANS = {
+  es: {
+    nav_formato:'Formato', nav_agenda:'Agenda', nav_galeria:'Galería',
+    nav_expertos:'Expertos', nav_empresas:'Empresas',
+    hero_desc:'Líderes del ecosistema tech y empresarial se reúnen en el Mini Foro IA de Fabián Kopel para explorar cómo la IA está transformando los negocios.',
+    hero_participants:'29 participantes',
+    fmt_label:'Formato del Evento', fmt_title:'Cómo será el día',
+    fmt_sub:'Un encuentro íntimo, dinámico y sin protocolo — diseñado para que fluya la conversación real.',
+    fmt_b1_title:'👥 Recepción',
+    fmt_b1_desc:'Presentación de integrantes con empresa y rol. Se realiza en deck. Café desde el primer momento.',
+    fmt_b2_title:'🎤 Ronda de Expertos',
+    fmt_b2_desc:'10 presentaciones de 10 minutos cada una. Cada experto comparte su visión sobre IA en su industria. Moderador: Fabián Kopel.',
+    fmt_b3_title:'🏢 Ronda de CEOs',
+    fmt_b3_desc:'Cada empresario presenta en 3 minutos sus puntos de dolor. Bloques de 10 min con intercambio directo con los expertos. A las 12:50 se sirve la picada, a las 13:30 ensaladas y asado — sin cortar las charlas (de a 3 personas).',
+    fmt_b4_time:'14:30 en adelante', fmt_b4_title:'🤝 Networking libre',
+    fmt_b4_desc:'Toda la tarde disponible para hablar con los expertos, intercambiar, y programar reuniones futuras. Sin reloj, sin protocolo.',
+    chip1:'Café durante todo el evento', chip2:'Picada 12:50 · Asado y ensaladas 13:30',
+    chip3:'Mesa central ~30 personas con acompañante',
+    chip4:'Grabación confidencial — link privado para cada CEO',
+    chip5:'2dos mandos presentes como oyentes',
+    chip6:'Cámara se corta si alguien no quiere ser grabado',
+    ag_label:'Programa', ag_title:'Agenda del Foro',
+    ag_sub:'Horarios confirmados en hora Uruguay. Click en cada speaker para ver su historia y video.',
+    gal_title:'Galería de Participantes',
+    gal_sub:'Imágenes generadas con DALL-E 3 · Videos con Sora 2 — click para explorar cada historia.',
+    exp_title:'Todos los Expertos', exp_sub:'Los referentes en IA, tech y negocios que comparten su visión.',
+    ceo_label:'Empresas', ceo_title:'CEOs & Directivos', ceo_sub:'Los líderes empresariales que se suman a la conversación.',
+    ic_label:'En Copia', ic_title:'Referentes del Ecosistema',
+    ic_sub:'Fundadores e íconos del tech latinoamericano que son parte de esta conversación.',
+    faq_title:'Preguntas Frecuentes',
+    faq1_q:'¿Qué es el Mini Foro IA?', faq1_a:'Es un encuentro íntimo organizado por Fabián Kopel donde líderes del ecosistema tech y empresarial uruguayo se reúnen para explorar cómo la inteligencia artificial está transformando los negocios. No es una conferencia masiva — es una conversación entre personas que están construyendo el futuro.',
+    faq2_q:'¿Quiénes pueden asistir?', faq2_a:'El foro es por invitación. Los participantes son CEOs, directores, founders y líderes tech con ganas genuinas de entender y adoptar la IA en sus organizaciones. El foco está en la calidad de la conversación, no en el volumen de asistentes.',
+    faq3_q:'¿De qué se habla exactamente?', faq3_a:'Casos reales de implementación de IA en empresas uruguayas y regionales, oportunidades y riesgos, cómo construir capacidades de IA en las organizaciones, y el futuro del trabajo y los negocios en un mundo con inteligencia artificial. Sin hype, solo sustancia.',
+    faq4_q:'¿Hay networking?', faq4_a:'El formato del foro está diseñado para maximizar las conexiones genuinas entre participantes. Con 29 personas seleccionadas, cada conversación tiene potencial de convertirse en una colaboración real.',
+    faq5_q:'¿Cómo contacto a Fabián?', faq5_a:'Podés contactar a Fabián Kopel directamente a través de LinkedIn o por los canales de comunicación del foro. Este evento es su iniciativa personal de generar conversaciones de impacto en el ecosistema uruguayo.',
+    modal_bio_label:'Su historia', modal_co_label:'La empresa',
+    footer_sub:'Organizado por Fabián Kopel · Montevideo, Uruguay',
+    ag_reception:'Recepción', ag_reception_role:'Presentación de integrantes — Empresa y Rol (deck)',
+    ag_opening:'Apertura', ag_opening_role:'Moderador: Fabián Kopel · Presentación de alcances y objetivos (10 min)',
+    ag_ceo_round:'Ronda de CEOs & Empresarios', ag_ceo_role:'3 min por empresa · Puntos de dolor · Intercambio con expertos · Picada 12:50 · Asado 13:30',
+    ag_net_title:'Networking libre', ag_net_role:'Toda la tarde con los expertos · Reuniones · Café y sobremesa',
+    ag_later:'14:30 en adelante',
+    special_badge:'⭐ Invitado Especial',
+  },
+  en: {
+    nav_formato:'Format', nav_agenda:'Agenda', nav_galeria:'Gallery',
+    nav_expertos:'Experts', nav_empresas:'Companies',
+    hero_desc:"Business and tech leaders gather at Fabián Kopel's Mini AI Forum to explore how AI is transforming industries.",
+    hero_participants:'29 participants',
+    fmt_label:'Event Format', fmt_title:'How the Day Unfolds',
+    fmt_sub:'An intimate, dynamic, and informal gathering — designed to spark real conversation.',
+    fmt_b1_title:'👥 Welcome & Introductions',
+    fmt_b1_desc:'Participants introduce themselves with their company and role. Conducted via deck. Coffee from the very start.',
+    fmt_b2_title:'🎤 Expert Roundtable',
+    fmt_b2_desc:'10 presentations of 10 minutes each. Each expert shares their vision of AI in their industry. Moderator: Fabián Kopel.',
+    fmt_b3_title:'🏢 CEO Roundtable',
+    fmt_b3_desc:"Each executive presents their pain points in 3 minutes. 10-min blocks with direct exchange with experts. Light food served at 12:50, salads & asado at 13:30 — conversation doesn't stop (groups of 3).",
+    fmt_b4_time:'14:30 onwards', fmt_b4_title:'🤝 Open Networking',
+    fmt_b4_desc:'The entire afternoon available to talk with experts, exchange ideas, and schedule future meetings. No clock, no protocol.',
+    chip1:'Coffee throughout the event', chip2:'Light bites 12:50 · Salads & asado 13:30',
+    chip3:'Central table ~30 people plus a guest',
+    chip4:'Confidential recording — private link for each CEO',
+    chip5:'Second-in-commands present as observers',
+    chip6:'Camera cuts off if anyone prefers not to be recorded',
+    ag_label:'Program', ag_title:'Forum Agenda',
+    ag_sub:'Times confirmed in Uruguay time. Click on each speaker to see their story and video.',
+    gal_title:"Participants Gallery",
+    gal_sub:'Images generated with DALL-E 3 · Videos with Sora 2 — click to explore each story.',
+    exp_title:'All Experts', exp_sub:'The leading voices in AI, tech and business sharing their vision.',
+    ceo_label:'Companies', ceo_title:'CEOs & Executives', ceo_sub:'The business leaders joining the conversation.',
+    ic_label:'Copied In', ic_title:'Ecosystem Leaders',
+    ic_sub:'Founders and icons of Latin American tech who are part of this conversation.',
+    faq_title:'Frequently Asked Questions',
+    faq1_q:'What is the Mini AI Forum?', faq1_a:"It's an intimate gathering organized by Fabián Kopel where leaders from Uruguay's tech and business ecosystem come together to explore how artificial intelligence is transforming business. It's not a massive conference — it's a conversation between people who are building the future.",
+    faq2_q:'Who can attend?', faq2_a:"The forum is by invitation only. Participants are CEOs, directors, founders and tech leaders genuinely committed to understanding and adopting AI in their organizations. The focus is on the quality of the conversation, not the volume of attendees.",
+    faq3_q:'What exactly is discussed?', faq3_a:"Real cases of AI implementation in Uruguayan and regional companies, opportunities and risks, how to build AI capabilities within organizations, and the future of work and business in a world with artificial intelligence. No hype, just substance.",
+    faq4_q:'Is there networking?', faq4_a:"The forum's format is designed to maximize genuine connections between participants. With 29 carefully selected people, every conversation has the potential to become a real collaboration.",
+    faq5_q:'How can I contact Fabián?', faq5_a:"You can contact Fabián Kopel directly through LinkedIn or through the forum's communication channels. This event is his personal initiative to spark high-impact conversations in the Uruguayan ecosystem.",
+    modal_bio_label:'Their Story', modal_co_label:'The Company',
+    footer_sub:'Organized by Fabián Kopel · Montevideo, Uruguay',
+    ag_reception:'Welcome', ag_reception_role:'Introductions — Company & Role (deck)',
+    ag_opening:'Opening', ag_opening_role:'Moderator: Fabián Kopel · Overview of scope and objectives (10 min)',
+    ag_ceo_round:'CEO & Executive Roundtable', ag_ceo_role:'3 min per company · Pain points · Exchange with experts · Light food 12:50 · Asado 13:30',
+    ag_net_title:'Open Networking', ag_net_role:'Full afternoon with experts · Meetings · Coffee & conversation',
+    ag_later:'14:30 onwards',
+    special_badge:'⭐ Special Guest',
+  }
+};
+
+function t(key) { return TRANS[lang]?.[key] ?? TRANS.es[key] ?? key; }
+
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (TRANS[lang]?.[key] !== undefined) el.textContent = TRANS[lang][key];
+  });
+  // Hero h1 uses innerHTML
+  const h1 = document.querySelector('h1[data-i18n-en]');
+  if (h1) h1.innerHTML = lang === 'en'
+    ? h1.getAttribute('data-i18n-en')
+    : 'Uruguay habla de<br><em>Inteligencia Artificial</em>';
+  // Update lang toggle label
+  document.getElementById('lang-label').textContent = lang === 'es' ? '🇬🇧 EN' : '🇺🇾 ES';
+}
+
+function toggleLang() {
+  lang = lang === 'es' ? 'en' : 'es';
+  applyTranslations();
+  renderAll();
+}
+
+function pf(person, field) {
+  // Return the English field if lang=en and it exists, else fall back to ES
+  if (lang === 'en') {
+    const enVal = person[field + '_en'];
+    if (enVal) return enVal;
+  }
+  return person[field] || '';
+}
+
 async function init() {
   try {
     const res = await fetch('data.json?' + Date.now());
     const data = await res.json();
     peopleData = data.people;
     renderAll();
+    applyTranslations();
   } catch(e) {
     console.error('Error loading data.json', e);
   }
@@ -438,8 +565,8 @@ function renderAgenda() {
         <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#0d0d1a)">👥</div>
         <div class="agenda-content">
           <div class="agenda-time">11:00 – 11:20</div>
-          <div class="agenda-name">Recepción</div>
-          <div class="agenda-role">Presentación de integrantes — Empresa y Rol (deck)</div>
+          <div class="agenda-name">${t('ag_reception')}</div>
+          <div class="agenda-role">${t('ag_reception_role')}</div>
         </div>
       </div>
     </div>
@@ -448,8 +575,8 @@ function renderAgenda() {
         <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#0a2a1a,#051a0a)">🎤</div>
         <div class="agenda-content">
           <div class="agenda-time">11:20 – 11:30</div>
-          <div class="agenda-name">Apertura</div>
-          <div class="agenda-role">Moderador: Fabián Kopel · Presentación de alcances y objetivos (10 min)</div>
+          <div class="agenda-name">${t('ag_opening')}</div>
+          <div class="agenda-role">${t('ag_opening_role')}</div>
         </div>
       </div>
     </div>`;
@@ -460,8 +587,8 @@ function renderAgenda() {
         <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#1a0f02,#2a1a04)">🏢</div>
         <div class="agenda-content">
           <div class="agenda-time">12:50 – 14:30</div>
-          <div class="agenda-name">Ronda de CEOs & Empresarios</div>
-          <div class="agenda-role">3 min por empresa · Puntos de dolor · Intercambio con expertos · Picada 12:50 · Asado 13:30</div>
+          <div class="agenda-name">${t('ag_ceo_round')}</div>
+          <div class="agenda-role">${t('ag_ceo_role')}</div>
         </div>
       </div>
     </div>
@@ -469,9 +596,9 @@ function renderAgenda() {
       <div class="agenda-card agenda-card-fixed">
         <div class="agenda-img-placeholder" style="background:linear-gradient(135deg,#0a1a0a,#051205)">🤝</div>
         <div class="agenda-content">
-          <div class="agenda-time">14:30 en adelante</div>
-          <div class="agenda-name">Networking libre</div>
-          <div class="agenda-role">Toda la tarde con los expertos · Reuniones · Café y sobremesa</div>
+          <div class="agenda-time">${t('ag_later')}</div>
+          <div class="agenda-name">${t('ag_net_title')}</div>
+          <div class="agenda-role">${t('ag_net_role')}</div>
         </div>
       </div>
     </div>`;
@@ -489,8 +616,8 @@ function renderAgenda() {
         <div class="agenda-content">
           <div class="agenda-time">${timeRange} ${noteHTML}</div>
           <div class="agenda-name">${p.name}</div>
-          <div class="agenda-role">${p.role} · ${p.company}</div>
-          <div class="agenda-tagline">${p.tagline}</div>
+          <div class="agenda-role">${pf(p,'role')} · ${p.company}</div>
+          <div class="agenda-tagline">${pf(p,'tagline')}</div>
         </div>
       </div>
     </div>`;
@@ -520,7 +647,7 @@ function renderGallery() {
       ${p.video ? `<div class="gallery-video-badge">▶ Video</div>` : ''}
       <div class="gallery-overlay">
         <div class="gallery-overlay-name">${lastName(p.name)}</div>
-        <div class="gallery-overlay-role">${p.role}</div>
+        <div class="gallery-overlay-role">${pf(p,'role')}</div>
       </div>
     </div>`;
   }).join('');
@@ -539,9 +666,9 @@ function renderExperts() {
       }
       <div class="person-card-body">
         <div class="person-name">${p.name}</div>
-        <div class="person-role">${p.role}</div>
+        <div class="person-role">${pf(p,'role')}</div>
         <div class="person-co">${p.company}</div>
-        ${isSpecial ? '<div class="special-badge">⭐ Invitado Especial</div>' : ''}
+        ${isSpecial ? `<div class="special-badge">${t('special_badge')}</div>` : ''}
       </div>
     </div>`;
   }).join('');
@@ -560,9 +687,9 @@ function renderCEOs() {
       }
       <div class="person-card-body">
         <div class="person-name">${p.name}</div>
-        <div class="person-role">${p.role}</div>
+        <div class="person-role">${pf(p,'role')}</div>
         <div class="person-co">${p.company}</div>
-        ${isSpecial ? '<div class="special-badge">⭐ Invitado Especial</div>' : ''}
+        ${isSpecial ? `<div class="special-badge">${t('special_badge')}</div>` : ''}
       </div>
     </div>`;
   }).join('');
@@ -579,7 +706,7 @@ function renderInCopy() {
       }
       <div>
         <div class="incopy-name">${p.name}</div>
-        <div class="incopy-co">${p.company || p.role}</div>
+        <div class="incopy-co">${p.company || pf(p,'role')}</div>
       </div>
     </div>`).join('');
 }
@@ -619,10 +746,10 @@ function openModal(id) {
 
   // Text
   document.getElementById('modal-name').textContent = p.name;
-  document.getElementById('modal-role').textContent = p.role + (p.company ? ' · ' + p.company : '');
-  document.getElementById('modal-tagline').textContent = p.tagline;
-  document.getElementById('modal-bio').textContent = p.bio;
-  document.getElementById('modal-company').textContent = p.company_desc;
+  document.getElementById('modal-role').textContent = pf(p,'role') + (p.company ? ' · ' + p.company : '');
+  document.getElementById('modal-tagline').textContent = pf(p,'tagline');
+  document.getElementById('modal-bio').textContent = pf(p,'bio');
+  document.getElementById('modal-company').textContent = pf(p,'company_desc');
 
   document.getElementById('modal-actions').innerHTML = '';
 

@@ -15,7 +15,11 @@
       "image": "images/nicolas-jodal.jpg",
       "video": "videos/nicolas-jodal.mp4",
       "time_end": "11:40",
-      "time_note": "con Gisella Bertelli"
+      "time_note": "con Gisella Bertelli",
+      "role_en": "CEO GeneXus / Globant",
+      "tagline_en": "Since 1988 reimagining how software is built — now with AI.",
+      "bio_en": "When the world was still programming on green terminals, Nicolás was already dreaming of machines writing code for us. He created GeneXus in 1988 and became a global pioneer of low-code, three decades ahead of the generative AI revolution. Today, from Globant, he continues to demonstrate that the best way to predict the future is to invent it.",
+      "company_desc_en": "GeneXus is the pioneering low-code development platform that automatically generates software since 1988."
     },
     {
       "id": "ariel-lipchutz",
@@ -32,7 +36,11 @@
       "image": "images/ariel-lipchutz.jpg",
       "video": "videos/ariel-lipchutz.mp4",
       "time_end": "11:50",
-      "time_note": "Invitado especial Bs As"
+      "time_note": "Invitado especial Bs As",
+      "role_en": "Founder IA2 Agency",
+      "tagline_en": "Turning the promise of AI into real results for companies.",
+      "bio_en": "From Buenos Aires, Ariel built IA2 Agency with an obsession: to make artificial intelligence stop being a buzzword and become revenue. He has implemented AI solutions in dozens of companies, transforming operations and multiplying results. His mission is simple — for every company in LatAm to have an intelligent co-pilot.",
+      "company_desc_en": "IA2 Agency is an agency specialized in the strategic implementation of artificial intelligence for companies."
     },
     {
       "id": "andi-bzurovski",
@@ -48,7 +56,11 @@
       "time": "11:50",
       "image": "images/andi-bzurovski.jpg",
       "video": "videos/andi-bzurovski.mp4",
-      "time_end": "12:00"
+      "time_end": "12:00",
+      "role_en": "AI Lead",
+      "tagline_en": "Where AI meets global payments, fintech magic is born.",
+      "bio_en": "At dLocal, the first Uruguayan unicorn, Andi leads the integration of artificial intelligence into a platform that processes payments in over 40 countries. He works at the exact intersection where AI transforms fintech: fraud detection, conversion optimization, and intelligent automation. He is the mind behind making millions of transactions flow faster and more securely.",
+      "company_desc_en": "dLocal is the Uruguayan fintech platform listed on NASDAQ that connects global payments with emerging markets."
     },
     {
       "id": "diego-gamba",
@@ -64,7 +76,11 @@
       "time": "12:00",
       "image": "images/diego-gamba.jpg",
       "video": "videos/diego-gamba.mp4",
-      "time_end": "12:10"
+      "time_end": "12:10",
+      "role_en": "CEO MercadoLibre Uruguay",
+      "tagline_en": "Leading the ecommerce revolution in Uruguay from the most valuable company in LatAm.",
+      "bio_en": "Diego leads the Uruguayan operation of MercadoLibre, the most valuable technology company in Latin America. Under his leadership, Uruguay has become a strategic hub for innovation in ecommerce, logistics, and fintech. Every day, his team moves the needle to help millions of people buy, sell, and pay more intelligently.",
+      "company_desc_en": "MercadoLibre is the largest ecommerce and fintech platform in Latin America, with a presence in 18 countries."
     },
     {
       "id": "daniel-gandara",
@@ -80,7 +96,11 @@
       "time": "12:00",
       "image": "images/daniel-gandara.jpg",
       "video": "videos/daniel-gandara.mp4",
-      "time_end": "12:10"
+      "time_end": "12:10",
+      "role_en": "VP of IT Product",
+      "tagline_en": "Building the product that defines how an entire continent shops.",
+      "bio_en": "As VP of IT Product at MercadoLibre, Daniel designs the technological experiences that impact hundreds of millions of users in LatAm. His product vision combines data, AI, and a user obsession to create platforms that scale to levels few in the world achieve. Every feature he launches transforms the way a continent engages in commerce.",
+      "company_desc_en": "MercadoLibre is the leading digital commerce and payments ecosystem in Latin America."
     },
     {
       "id": "esteban-ordano",
@@ -96,7 +116,11 @@
       "time": "12:10",
       "image": "images/esteban-ordano.jpg",
       "video": "videos/esteban-ordano.mp4",
-      "time_end": "12:20"
+      "time_end": "12:20",
+      "role_en": "Co-founder of Decentraland",
+      "tagline_en": "Built an entire virtual world on blockchain — before the metaverse existed.",
+      "bio_en": "In 2015, when talking about the metaverse was science fiction, Tibi co-founded Decentraland and created the first decentralized virtual world on the planet. From Argentina and Uruguay, he demonstrated that Latin builders can create technology that defines global categories. Today, he continues to push the boundaries of what is possible at the intersection of blockchain, AI, and immersive experiences.",
+      "company_desc_en": "Decentraland is the first decentralized virtual world platform built on the Ethereum blockchain."
     },
     {
       "id": "matias-boix",
@@ -112,7 +136,11 @@
       "time": "12:20",
       "image": "images/matias-boix.jpg",
       "video": "videos/matias-boix.mp4",
-      "time_end": "12:30"
+      "time_end": "12:30",
+      "role_en": "SVP Globant X",
+      "tagline_en": "Leading digital transformation from Globant's innovation lab.",
+      "bio_en": "As SVP of Globant X, Matías leads the innovation arm of one of the world's most important tech companies. His team works at the forefront of AI, designing solutions that transform Fortune 500 companies. Where others see trends, Matías builds products that define the future of digital transformation.",
+      "company_desc_en": "Globant is a digital native company listed on the NYSE that helps the world's largest organizations reinvent themselves with technology."
     },
     {
       "id": "gaston-milano",
@@ -128,7 +156,11 @@
       "time": "12:30",
       "image": "images/gaston-milano.jpg",
       "video": "videos/gaston-milano.mp4",
-      "time_end": "12:40"
+      "time_end": "12:40",
+      "role_en": "CEO Globant Enterprise AI",
+      "tagline_en": "Bringing enterprise AI to the largest companies on the planet.",
+      "bio_en": "Gastón leads Globant Enterprise AI with a clear mission: to ensure that the largest companies in the world adopt artificial intelligence in a real, scalable, and transformative way. It's not about demos — it's about impact. His team works with CEOs and boards of Fortune 500 companies to turn AI from a pilot project into a competitive advantage.",
+      "company_desc_en": "Globant Enterprise AI is Globant's unit specialized in delivering artificial intelligence solutions at a global enterprise scale."
     },
     {
       "id": "leo-alvarez",
@@ -144,7 +176,11 @@
       "time": "12:40",
       "image": "images/leo-alvarez.jpg",
       "video": "videos/leo-alvarez.mp4",
-      "time_end": "12:45"
+      "time_end": "12:45",
+      "role_en": "Founder Fenicio",
+      "tagline_en": "Democratizing ecommerce so that any business in LatAm can sell online.",
+      "bio_en": "Leo founded Fenicio with the conviction that selling online should not be a privilege of large companies. His ecommerce platform empowers thousands of businesses in Uruguay and LatAm to compete in the digital economy. Where others saw a small market, Leo saw a huge opportunity — and built the infrastructure to take advantage of it.",
+      "company_desc_en": "Fenicio is the Uruguayan ecommerce platform that allows companies of all sizes to sell online professionally."
     },
     {
       "id": "andres-marrero",
@@ -160,7 +196,11 @@
       "time": "12:45",
       "image": "images/andres-marrero.jpg",
       "video": "videos/andres-marrero.mp4",
-      "time_end": "12:50"
+      "time_end": "12:50",
+      "role_en": "Founder Cardinal / Global Commerce Uruguay",
+      "tagline_en": "Connecting Uruguayan brands with global digital commerce.",
+      "bio_en": "Andrés founded Cardinal as a digital agency and evolved it into Global Commerce Uruguay, creating a bridge between local brands and the global digital economy. His vision combines digital marketing, ecommerce, and strategy to enable Uruguayan companies to compete on equal footing in the world. From Montevideo, he demonstrates that local talent can have a global impact.",
+      "company_desc_en": "Cardinal is a digital agency and Global Commerce Uruguay is a platform that connects Uruguayan brands with global commerce."
     },
     {
       "id": "sebastian-sanchez",
@@ -175,7 +215,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/sebastian-sanchez.jpg",
-      "video": "videos/sebastian-sanchez.mp4"
+      "video": "videos/sebastian-sanchez.mp4",
+      "role_en": "CEO",
+      "tagline_en": "Driving businesses with strategic vision and technology.",
+      "bio_en": "Sebastián leads KS-NX with the mindset that every company has hidden potential waiting to be unlocked by the right technology. His approach combines business strategy with innovation to transform operations and create lasting competitive advantages.",
+      "company_desc_en": "KS-NX is a Uruguayan company focused on business and technological solutions."
     },
     {
       "id": "gonzalo-pittaluga",
@@ -190,7 +234,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/gonzalo-pittaluga.jpg",
-      "video": "videos/gonzalo-pittaluga.mp4"
+      "video": "videos/gonzalo-pittaluga.mp4",
+      "role_en": "Director",
+      "tagline_en": "Transforming accounting with intelligence and a forward-looking vision.",
+      "bio_en": "Gonzalo leads Pittaluga KS Contable with the conviction that accounting services can be much more than numbers on a spreadsheet. His firm combines financial expertise with technological vision, helping Uruguayan companies make better decisions with intelligent data.",
+      "company_desc_en": "Pittaluga KS Contable is a Uruguayan accounting firm that integrates financial services with a strategic business vision."
     },
     {
       "id": "martin-eurnekian",
@@ -205,7 +253,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/martin-eurnekian.jpg",
-      "video": "videos/martin-eurnekian.mp4"
+      "video": "videos/martin-eurnekian.mp4",
+      "role_en": "CEO Corporación América",
+      "tagline_en": "Connecting continents from airports to fields.",
+      "bio_en": "Martín leads Corporación América, a multinational holding that operates airports, media, and agribusiness in multiple countries. With a vision that crosses industries and borders, he manages critical infrastructure that connects millions of people each year. His leadership demonstrates that scale and innovation can coexist in the most traditional industries.",
+      "company_desc_en": "Corporación América is a multinational holding that operates international airports, media, and agribusiness."
     },
     {
       "id": "martin-dovat",
@@ -220,7 +272,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/martin-dovat.jpg",
-      "video": "videos/martin-dovat.mp4"
+      "video": "videos/martin-dovat.mp4",
+      "role_en": "Director Zonamerica",
+      "tagline_en": "Building the most innovative business ecosystem in Uruguay.",
+      "bio_en": "Martín drives Zonamerica, the business campus and free trade zone that has become the technological and business heart of Uruguay. From this unique ecosystem, hundreds of global companies operate, innovate, and grow. His vision transformed a property into the hub that put Uruguay on the radar of the world's technology multinationals.",
+      "company_desc_en": "Zonamerica is the leading free trade zone and business campus in Uruguay, home to hundreds of global technology and service companies."
     },
     {
       "id": "orlando-dovat",
@@ -235,7 +291,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/orlando-dovat.jpg",
-      "video": "videos/orlando-dovat.mp4"
+      "video": "videos/orlando-dovat.mp4",
+      "role_en": "Founder Zonamerica",
+      "tagline_en": "The visionary who imagined Uruguay as a regional tech hub.",
+      "bio_en": "Orlando is the visionary behind Zonamerica, the free trade zone that forever transformed the Uruguayan business landscape. When few believed in Uruguay as a destination for technological investment, he built the infrastructure that attracted the world's most important companies. His legacy is an ecosystem that generates thousands of high-quality jobs.",
+      "company_desc_en": "Zonamerica is the leading free trade zone and business campus in Uruguay, a pioneer in attracting technological investment to the country."
     },
     {
       "id": "juan-manuel-parada",
@@ -250,7 +310,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/juan-manuel-parada.jpg",
-      "video": "videos/juan-manuel-parada.mp4"
+      "video": "videos/juan-manuel-parada.mp4",
+      "role_en": "CEO Tienda Inglesa",
+      "tagline_en": "Redefining the premium retail experience in Uruguay.",
+      "bio_en": "Juan Manuel leads Tienda Inglesa, the premium supermarket chain that is a reference in shopping experience in Uruguay. Under his leadership, the chain combines tradition with innovation, adopting technology to elevate every customer touchpoint. His vision demonstrates that physical retail has a bright future when done with excellence.",
+      "company_desc_en": "Tienda Inglesa is the premium supermarket chain in Uruguay, recognized for its quality of service and shopping experience."
     },
     {
       "id": "joaquin-cabrera",
@@ -265,7 +329,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/joaquin-cabrera.jpg",
-      "video": "videos/joaquin-cabrera.mp4"
+      "video": "videos/joaquin-cabrera.mp4",
+      "role_en": "CEO Ciemsa CSI Ingeniería",
+      "tagline_en": "World-class engineering with Uruguayan roots.",
+      "bio_en": "Joaquín leads Ciemsa CSI Ingeniería with the conviction that Uruguayan engineering can compete with the best in the world. His company delivers high-complexity projects by combining technical rigor with technological innovation. Under his leadership, the firm positions itself as a benchmark in engineering applied to industry and infrastructure.",
+      "company_desc_en": "Ciemsa CSI Ingeniería is a leading Uruguayan company in industrial engineering and infrastructure services."
     },
     {
       "id": "agustin-tafernaberry",
@@ -280,7 +348,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/agustin-tafernaberry.jpg",
-      "video": "videos/agustin-tafernaberry.mp4"
+      "video": "videos/agustin-tafernaberry.mp4",
+      "role_en": "CEO Itaú Uruguay",
+      "tagline_en": "Transforming banking in Uruguay with innovation and Latin American scale.",
+      "bio_en": "Agustín leads Itaú Uruguay, the local subsidiary of the largest bank in Latin America. His leadership combines the power of a global financial institution with the agility needed to innovate in the Uruguayan market. Under his management, Itaú positions itself as a benchmark in digital banking and financial transformation in the country.",
+      "company_desc_en": "Itaú Uruguay is the local operation of the largest private bank in Latin America, with a strong focus on innovation and digital banking."
     },
     {
       "id": "andres-packziarz",
@@ -295,7 +367,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/andres-packziarz.jpg",
-      "video": "videos/andres-packziarz.mp4"
+      "video": "videos/andres-packziarz.mp4",
+      "role_en": "Director",
+      "tagline_en": "Building the future of real estate development in Uruguay.",
+      "bio_en": "Andrés leads Joacamar-Xion with a long-term vision, developing projects that transform the Uruguayan urban landscape. His approach combines real estate development with innovation, creating spaces that adapt to the needs of a changing world. Each project he undertakes reflects his commitment to quality and urban transformation.",
+      "company_desc_en": "Joacamar-Xion is a Uruguayan business group with operations in real estate development and diversified businesses."
     },
     {
       "id": "natty-manhard",
@@ -310,7 +386,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/natty-manhard.jpg",
-      "video": "videos/natty-manhard.mp4"
+      "video": "videos/natty-manhard.mp4",
+      "role_en": "Director Chic Parisien",
+      "tagline_en": "Where fashion meets business vision.",
+      "bio_en": "Natty leads Chic Parisien with the elegance of someone who understands that fashion is much more than trends — it is identity, culture, and business. Her leadership has positioned the brand as a benchmark in fashion retail in Uruguay. With a forward-looking vision, she explores how technology and AI can transform the shopping experience in the fashion world.",
+      "company_desc_en": "Chic Parisien is a recognized fashion and retail chain in Uruguay with decades of experience."
     },
     {
       "id": "diego-forlan",
@@ -325,7 +405,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/diego-forlan.jpg",
-      "video": "videos/diego-forlan.mp4"
+      "video": "videos/diego-forlan.mp4",
+      "role_en": "Founder DFC Sports Club",
+      "tagline_en": "From the Ballon d'Or to the business world — champions do not retire, they transform.",
+      "bio_en": "He lifted the Ballon d'Or at the 2010 World Cup with a dribble that stopped time. Today, with the same passion he had for dribbling past defenders, Forlán builds his sports venture DFC Club, demonstrating that great champions do not retire — they transform. His vision combines sports, technology, and entrepreneurship in a project that inspires an entire generation.",
+      "company_desc_en": "DFC Sports Club is the sports venture founded by Diego Forlán, focused on sports training and development."
     },
     {
       "id": "alejandro-gerwer",
@@ -340,7 +424,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/alejandro-gerwer.jpg",
-      "video": "videos/alejandro-gerwer.mp4"
+      "video": "videos/alejandro-gerwer.mp4",
+      "role_en": "Director Casa Jorge Importación",
+      "tagline_en": "Importing tradition with an eye on innovation.",
+      "bio_en": "Alejandro leads Casa Jorge Importación, a company with a history that continues to reinvent itself in each generation. His approach combines the solidity of decades of commercial experience with the curiosity to explore how technology can transform the import and distribution business. Where others see a traditional sector, he sees opportunities for innovation.",
+      "company_desc_en": "Casa Jorge Importación is a Uruguayan company with a long history in import and commercial distribution."
     },
     {
       "id": "pipe-stein",
@@ -355,7 +443,11 @@
       "type": "ceo",
       "time": null,
       "image": "images/pipe-stein.jpg",
-      "video": "videos/pipe-stein.mp4"
+      "video": "videos/pipe-stein.mp4",
+      "role_en": "Director Notable Publicidad",
+      "tagline_en": "Advertising creativity that moves brands and markets.",
+      "bio_en": "Pipe leads Notable Publicidad with the creative energy of someone who understands that advertising is the art of connecting brands with people. His agency has built memorable campaigns that define commercial communication in Uruguay. Today, he explores how AI can enhance creativity without replacing what makes it human.",
+      "company_desc_en": "Notable Publicidad is a Uruguayan advertising agency recognized for its strategic creativity and high-impact campaigns."
     },
     {
       "id": "mati-wolosky",
@@ -370,7 +462,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/mati-wolosky.jpg",
-      "video": "videos/mati-wolosky.mp4"
+      "video": "videos/mati-wolosky.mp4",
+      "role_en": "Tech Entrepreneur",
+      "tagline_en": "Tech entrepreneur with Uruguayan DNA and global ambition.",
+      "bio_en": "Mati represents the new generation of Uruguayan tech entrepreneurs who demonstrate that impactful technology can be built from a country of 3.5 million. His background in the Uruguayan startup ecosystem positions him as a relevant voice on innovation, technology, and entrepreneurship in the region.",
+      "company_desc_en": "Tech entrepreneur in the Uruguayan startup ecosystem."
     },
     {
       "id": "sergio-fogel",
@@ -385,7 +481,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/sergio-fogel.jpg",
-      "video": "videos/sergio-fogel.mp4"
+      "video": "videos/sergio-fogel.mp4",
+      "role_en": "Co-founder dLocal",
+      "tagline_en": "Co-founded the first Uruguayan unicorn and took it to NASDAQ.",
+      "bio_en": "Sergio co-founded dLocal and wrote one of the most important pages in the tech history of Uruguay: the country's first unicorn, listed on NASDAQ in 2021. His vision of connecting global payments with emerging markets created a company that processes billions of dollars a year. He demonstrated to the world that a world-class fintech can be built from Montevideo.",
+      "company_desc_en": "dLocal is the cross-border payment platform founded in Uruguay, listed on NASDAQ since 2021."
     },
     {
       "id": "hernan-kazah",
@@ -400,7 +500,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/hernan-kazah.jpg",
-      "video": "videos/hernan-kazah.mp4"
+      "video": "videos/hernan-kazah.mp4",
+      "role_en": "Co-founder of Kaszek Ventures",
+      "tagline_en": "From VP of MercadoLibre to building the largest VC in LatAm.",
+      "bio_en": "Hernán was VP of MercadoLibre during the years when the company transitioned from a startup to a continental giant. With that unique experience, he co-founded Kaszek Ventures and turned it into the largest and most influential venture capital fund in Latin America, backing the next unicorns in the region. His eye for spotting extraordinary founders has shaped the Latin American tech ecosystem.",
+      "company_desc_en": "Kaszek Ventures is the largest venture capital fund in Latin America, with investments in the region's most successful startups."
     },
     {
       "id": "guibert-englebienne",
@@ -415,7 +519,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/guibert-englebienne.jpg",
-      "video": "videos/guibert-englebienne.mp4"
+      "video": "videos/guibert-englebienne.mp4",
+      "role_en": "CTO and Co-founder of Globant",
+      "tagline_en": "The technological architect behind one of the largest tech companies in LatAm.",
+      "bio_en": "Guibert co-founded Globant and as CTO designed the technological architecture that allowed the company to scale from four friends in Buenos Aires to over 28,000 employees worldwide. His technical vision and passion for innovation have been fundamental in making Globant a global leader in digital transformation. He is the mind that translates the future into code.",
+      "company_desc_en": "Globant is an Argentine digital native company listed on the NYSE, with over 28,000 employees and operations in 30 countries."
     },
     {
       "id": "martin-migoya",
@@ -430,7 +538,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/martin-migoya.jpg",
-      "video": "videos/martin-migoya.mp4"
+      "video": "videos/martin-migoya.mp4",
+      "role_en": "CEO and Co-founder of Globant",
+      "tagline_en": "From four founders in La Plata to an $8B tech company on NYSE.",
+      "bio_en": "Martín co-founded Globant in 2003 with three friends and a bold idea: to create a world-class technology company from Latin America. Today, as CEO, he leads a company with a market cap of over $8 billion listed on NYSE, with offices in 30 countries. His story is living proof that Latin talent can build global tech giants.",
+      "company_desc_en": "Globant is one of the most valuable technology companies born in Latin America, listed on NYSE with an $8B market cap."
     },
     {
       "id": "martin-delosantos",
@@ -445,7 +557,11 @@
       "type": "incopy",
       "time": null,
       "image": "images/martin-delosantos.jpg",
-      "video": "videos/martin-delosantos.mp4"
+      "video": "videos/martin-delosantos.mp4",
+      "role_en": "CFO",
+      "tagline_en": "The guardian of the finances of the largest digital ecosystem in Latin America.",
+      "bio_en": "Martín is the Chief Financial Officer of MercadoLibre, the most valuable technology company in Latin America. In this strategic role, he manages the finances of a giant that moves billions of dollars across 18 countries. His job is to ensure that the Latin American ecommerce and fintech machine has the necessary fuel to continue growing.",
+      "company_desc_en": "MercadoLibre is the largest digital commerce and payments ecosystem in Latin America, with a presence in 18 countries and a valuation of tens of billions of dollars."
     }
   ]
 }
