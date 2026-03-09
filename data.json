@@ -604,21 +604,21 @@
     {
       "id": "diego-lev",
       "name": "Diego Lev",
-      "role": "Emprendedor IA",
-      "company": "",
-      "linkedin": "https://www.linkedin.com/search/results/people/?keywords=Diego+Lev+Uruguay",
-      "tagline": "Transformando industrias con inteligencia artificial aplicada.",
-      "bio": "Participante del Mini Foro IA Uruguay junto a Pipe Stein, con foco en la aplicación práctica de la inteligencia artificial en negocios.",
-      "company_desc": "",
+      "role": "Co-Director Notable Publicidad",
+      "company": "Notable Publicidad",
+      "linkedin": "https://www.linkedin.com/in/diego-lev/",
+      "tagline": "Co-creador de la agencia publicitaria más reconocida de Uruguay — ahora explorando cómo la IA transforma la creatividad.",
+      "bio": "Diego Lev co-fundó Notable Publicidad junto a Pipe Stein, construyendo la agencia más reconocida del mercado uruguayo. Según Equipos Consultores, Notable lidera en creatividad, estrategia y precios de medios, y Diego es considerado uno de los mejores creativos del país. En el Foro IA explora cómo la inteligencia artificial puede amplificar el impacto de las ideas sin perder la chispa humana.",
+      "company_desc": "Notable Publicidad es la agencia publicitaria líder en Uruguay, reconocida por su creatividad estratégica y campañas de alto impacto.",
       "initials": "DL",
-      "type": "expert",
+      "type": "ceo",
       "time": "",
       "image": "images/diego-lev.jpg",
       "video": "",
       "role_en": "AI Entrepreneur",
-      "tagline_en": "Transforming industries with applied artificial intelligence.",
-      "bio_en": "Participant of Mini Foro IA Uruguay alongside Pipe Stein, focused on the practical application of artificial intelligence in business.",
-      "company_desc_en": ""
+      "tagline_en": "Co-creator of Uruguay's most recognized advertising agency — now exploring how AI transforms creativity.",
+      "bio_en": "Diego Lev co-founded Notable Publicidad alongside Pipe Stein, building the most recognized agency in the Uruguayan market. According to Equipos Consultores, Notable leads in creativity, strategy, and media pricing, and Diego is considered one of the country's top creatives. At Foro IA, he explores how artificial intelligence can amplify the impact of ideas without losing the human spark.",
+      "company_desc_en": "Notable Publicidad is the leading advertising agency in Uruguay, recognized for its strategic creativity and high-impact campaigns."
     }
   ]
 }
