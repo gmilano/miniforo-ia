@@ -117,6 +117,25 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,15,19,.92);backdrop-fil
 .modal-media img{width:100%;height:100%;object-fit:cover}
 .modal-media video{width:100%;height:100%;object-fit:cover;display:none}
 .modal-media video.has-video{display:block}
+.modal-media iframe{width:100%;height:100%;display:none;border:none}
+.modal-media iframe.has-video{display:block}
+/* Event photos gallery */
+.event-photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:960px;margin:0 auto;padding:0 20px}
+@media(min-width:600px){.event-photos-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:480px){.event-photos-grid{grid-template-columns:repeat(2,1fr)}}
+.event-photo-item{aspect-ratio:4/3;overflow:hidden;border-radius:8px;cursor:pointer;border:1px solid var(--border);transition:transform .2s,border-color .2s}
+.event-photo-item:hover{transform:scale(1.03);border-color:var(--accent)}
+.event-photo-item img{width:100%;height:100%;object-fit:cover;display:block}
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;display:none;align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;border-radius:10px;object-fit:contain}
+.lightbox-close{position:absolute;top:20px;right:24px;color:#fff;font-size:1.6rem;cursor:pointer;opacity:.7;transition:opacity .2s}
+.lightbox-close:hover{opacity:1}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);border:none;color:#fff;font-size:1.4rem;cursor:pointer;padding:12px 16px;border-radius:8px;transition:background .2s}
+.lightbox-nav:hover{background:rgba(255,255,255,.3)}
+.lightbox-prev{left:16px}
+.lightbox-next{right:16px}
 .modal-media-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--muted)}
 .modal-play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);cursor:pointer;transition:background .2s}
 .modal-play-btn:hover{background:rgba(0,0,0,.1)}
@@ -188,6 +207,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     <a href="#formato" data-i18n="nav_formato">Formato</a>
     <a href="#agenda" data-i18n="nav_agenda">Agenda</a>
     <a href="#galeria" data-i18n="nav_galeria">Galería</a>
+    <a href="#fotos" data-i18n="nav_fotos">Fotos</a>
     <a href="#expertos" data-i18n="nav_expertos">Expertos</a>
     <a href="#empresas" data-i18n="nav_empresas">Empresas</a>
   </div>
@@ -211,7 +231,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     </div>
     <div class="hero-meta-item">
       <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      <span data-i18n="hero_participants">29 participantes</span>
+      <span data-i18n="hero_participants">32 participantes</span>
     </div>
   </div>
 </div>
@@ -277,6 +297,26 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     </div>
   </div>
   <div class="gallery-grid" id="gallery-grid"></div>
+</div>
+
+<!-- FOTOS DEL EVENTO -->
+<div class="section-full" id="fotos">
+  <div class="section-full-inner">
+    <div class="section-header">
+      <div class="section-label">📸 Real</div>
+      <div class="section-title" data-i18n="photos_title">Fotos del Evento</div>
+      <div class="section-sub" data-i18n="photos_sub">El Mini Foro IA tal como fue — momentos reales del encuentro en Montevideo.</div>
+    </div>
+  </div>
+  <div class="event-photos-grid" id="event-photos-grid"></div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1);event.stopPropagation()">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1);event.stopPropagation()">›</button>
 </div>
 
 <!-- EXPERTOS -->
@@ -374,6 +414,7 @@ footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
     <div class="modal-media" id="modal-media">
       <img id="modal-img" src="" alt="" style="display:none">
       <video id="modal-video" controls playsinline autoplay muted loop preload="metadata"></video>
+      <iframe id="modal-iframe" allowfullscreen allow="autoplay"></iframe>
       <div class="modal-media-loading" id="modal-media-placeholder">
         <span>Cargando...</span>
       </div>
@@ -406,10 +447,11 @@ let lang = 'en';
 
 const TRANS = {
   es: {
-    nav_formato:'Formato', nav_agenda:'Agenda', nav_galeria:'Galería',
+    nav_formato:'Formato', nav_agenda:'Agenda', nav_galeria:'Galería', nav_fotos:'Fotos',
     nav_expertos:'Expertos', nav_empresas:'Empresas',
     hero_desc:'Líderes del ecosistema tech y empresarial se reúnen en el Mini Foro IA de Fabián Kopel para explorar cómo la IA está transformando los negocios.',
-    hero_participants:'29 participantes',
+    hero_participants:'32 participantes',
+    photos_title:'Fotos del Evento', photos_sub:'El Mini Foro IA tal como fue — momentos reales del encuentro en Montevideo.',
     fmt_label:'Formato del Evento', fmt_title:'Cómo será el día',
     fmt_sub:'Un encuentro íntimo, dinámico y sin protocolo — diseñado para que fluya la conversación real.',
     fmt_b1_title:'👥 Recepción',
@@ -449,10 +491,11 @@ const TRANS = {
     special_badge:'⭐ Invitado Especial',
   },
   en: {
-    nav_formato:'Format', nav_agenda:'Agenda', nav_galeria:'Gallery',
+    nav_formato:'Format', nav_agenda:'Agenda', nav_galeria:'Gallery', nav_fotos:'Photos',
     nav_expertos:'Experts', nav_empresas:'Companies',
     hero_desc:"Business and tech leaders gather at Fabián Kopel's Mini AI Forum to explore how AI is transforming industries.",
-    hero_participants:'29 participants',
+    hero_participants:'32 participants',
+    photos_title:'Event Photos', photos_sub:'Mini Foro IA as it happened — real moments from the gathering in Montevideo.',
     fmt_label:'Event Format', fmt_title:'How the Day Unfolds',
     fmt_sub:'An intimate, dynamic, and informal gathering — designed to spark real conversation.',
     fmt_b1_title:'👥 Welcome & Introductions',
@@ -721,9 +764,12 @@ function openModal(id) {
   const vid = document.getElementById('modal-video');
   const placeholder = document.getElementById('modal-media-placeholder');
 
+  const iframe = document.getElementById('modal-iframe');
   vid.pause();
   vid.src = '';
   vid.className = '';
+  iframe.src = '';
+  iframe.className = '';
   img.style.display = 'none';
   placeholder.style.display = 'flex';
 
@@ -735,13 +781,21 @@ function openModal(id) {
   }
 
   if (p.video) {
-    if (p.image) vid.poster = p.image; // show image while video loads
-    vid.src = p.video;
-    vid.className = 'has-video';
-    img.style.display = 'none';
-    placeholder.style.display = 'none';
-    vid.load();
-    vid.play().catch(()=>{}); // autoplay (silenced, so policy OK)
+    const isDrive = p.video.includes('drive.google.com');
+    if (isDrive) {
+      iframe.src = p.video;
+      iframe.className = 'has-video';
+      img.style.display = 'none';
+      placeholder.style.display = 'none';
+    } else {
+      if (p.image) vid.poster = p.image;
+      vid.src = p.video;
+      vid.className = 'has-video';
+      img.style.display = 'none';
+      placeholder.style.display = 'none';
+      vid.load();
+      vid.play().catch(()=>{});
+    }
   }
 
   // Text
@@ -759,8 +813,11 @@ function openModal(id) {
 
 function closeModal() {
   const vid = document.getElementById('modal-video');
+  const iframe = document.getElementById('modal-iframe');
   vid.pause();
   vid.src = '';
+  iframe.src = '';
+  iframe.className = '';
   document.getElementById('modal-overlay').classList.remove('open');
   document.body.style.overflow = '';
 }
@@ -776,7 +833,73 @@ document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
 });
 
+/* ─── FOTOS DEL EVENTO ─── */
+const eventPhotos = [
+  "1z-xhnDGVfKBsmgTkDmZs4zLMtvQrYoyb",
+  "12fsgL7QZZVIdtVUdxt-yC-cNoZs1vTEQ",
+  "1Ox3TGZ_ilzcQ4uI_xl7RGgZYYu6JzyC-",
+  "1EoYdcYWAR8GPTdMvUm1GQLvUi65juUUg",
+  "1201PnazEP-YYnYyLDJcw7pjNSmlBmWDb",
+  "1hTt4ZGB034-txnMbGaa6JBEuYYScY5Nt",
+  "1Z9Ilvyrsl3u-5eBB6yH7ygVbxzRF2AD8",
+  "1xhwExtBGiRdJDBYQuT6KlInqmB-jdtn0",
+  "1-e0s6y0U281Pq_0SKO_jXjE5hAIpn9tJ",
+  "1x_oDjnNjHR9ETEoWCRSM55KtoQ-DRtLC",
+  "1jrU8sQ_cUkx3i-LoCss2ZRW3H0QI30H5",
+  "1ojTws69-ETOnslC6N1WoxnFHaohZopGv",
+  "1oJ7x9aMXnF8KIX8y7uhWEs9xs1sDfPEa",
+  "1-pCzf0pwdgK3PvajilDY_qPg4-Eco9Ng",
+  "1Uec9I6Gk3e9qZOeLiI14GzfQ3kU8zMia",
+  "1fCt-LPxEaRujUV5EdmQPBm3tpom3aDd5",
+  "1Sg9uPhXV8LYZzMBrmtbhu8NkdhA1wLgS",
+  "1xOqispo6ZcTRgXkEkFiaqhMGWVhcCaZj"
+];
+
+function driveImg(id) {
+  return `https://drive.google.com/uc?export=view&id=${id}`;
+}
+
+let currentLightboxIdx = 0;
+
+function openLightbox(idx) {
+  currentLightboxIdx = idx;
+  document.getElementById('lightbox-img').src = driveImg(eventPhotos[idx]);
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (e && e.target !== document.getElementById('lightbox') && e.target !== document.querySelector('.lightbox-close')) return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.getElementById('lightbox-img').src = '';
+  document.body.style.overflow = '';
+}
+
+function lightboxNav(dir) {
+  currentLightboxIdx = (currentLightboxIdx + dir + eventPhotos.length) % eventPhotos.length;
+  document.getElementById('lightbox-img').src = driveImg(eventPhotos[currentLightboxIdx]);
+}
+
+document.addEventListener('keydown', e => {
+  if (document.getElementById('lightbox').classList.contains('open')) {
+    if (e.key === 'ArrowRight') lightboxNav(1);
+    if (e.key === 'ArrowLeft') lightboxNav(-1);
+    if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+  }
+});
+
+function renderEventPhotos() {
+  const grid = document.getElementById('event-photos-grid');
+  if (!grid) return;
+  grid.innerHTML = eventPhotos.map((id, idx) => `
+    <div class="event-photo-item" onclick="openLightbox(${idx})">
+      <img src="${driveImg(id)}" alt="Foto del evento ${idx+1}" loading="lazy">
+    </div>
+  `).join('');
+}
+
 init();
+renderEventPhotos();
 </script>
 </body>
 </html>
