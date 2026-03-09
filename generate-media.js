@@ -225,8 +225,12 @@ async function main() {
   if (!VIDEOS_ONLY) {
     console.log('📸 IMAGES...');
     for (const p of data.people) await generateImage(p);
-    // Update data.json image paths
-    for (const p of data.people) { if (fs.existsSync(`images/${p.id}.jpg`)) p.image = `images/${p.id}.jpg`; }
+    // Update data.json image paths — only set local path if NOT already a Drive/external URL
+    for (const p of data.people) {
+      if (!p.image?.startsWith('http') && fs.existsSync(`images/${p.id}.jpg`)) {
+        p.image = `images/${p.id}.jpg`;
+      }
+    }
     fs.writeFileSync('data.json', JSON.stringify(data,null,2));
     console.log('\n✅ Images done\n');
   }
